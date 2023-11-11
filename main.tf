@@ -1,3 +1,1 @@
-output "test" {
-value = "test"
-}
+
