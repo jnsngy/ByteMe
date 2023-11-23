@@ -1,0 +1,36 @@
+Kasszagép Program Dokumentáció
+Bevezetés
+A Kasszagép Program egy olyan alkalmazás, amely lehetővé teszi a pénztárgép funkcióinak szimulálását. Az alkalmazás egy intuitív felhasználói felületen keresztül biztosítja a vásárlások kezelését és megjelenítését.
+
+Áttekintés
+A program az alábbi fő komponensekből áll:
+
+Pénztárgép
+A Pénztárgép osztály felelős az alkalmazás fő vezérléséért. Tartalmazza a főmenüt, amelyen keresztül elérhetőek az egyes funkciók. Mindenütt az Esc billentyűt használhatjuk a vissza lépéshez az előző menühöz.
+
+FőMenü
+A FőMenü osztály három fő funkciót kínál:
+
+Új Vásárlás: Lehetővé teszi új vásárlások rögzítését, termékek hozzáadását és az EUR árfolyam megadását.
+Vásárlások Megjelenítése: Két opciót kínál - az egyes vásárlások megjelenítése ID alapján, valamint az összes felvitt vásárlás megjelenítése csökkenő sorrendben.
+Vásárlások Kezelése: Lehetőséget biztosít a rögzített vásárlások kezelésére, ideértve a törlést is.
+Új Vásárlás
+Az ÚjVásárlás osztály a következő funkciókat tartalmazza:
+
+Termék Hozzáadása: Lehetővé teszi a termékek hozzáadását a vásárláshoz.
+EUR árfolyam Megadása: Engedélyezi az EUR és forint árfolyamának megadását.
+Vásárlások Megjelenítése
+A VásárlásokMegjelenítése osztály két lehetőséget kínál:
+
+ID alapján Egy: Megjeleníti az adott ID-hez tartozó vásárlás adatait és a legdrágább vásárlást.
+Összes Felvitt: Megjeleníti az összes rögzített vásárlást csökkenő sorrendben.
+Vásárlások Kezelése
+A Vásárlásokkezelése osztály lehetővé teszi a vásárlások megtekintését és törlését:
+
+Megjelenítés Törléshez: Lehetővé teszi egy adott vásárlás törlését ID alapján.
+Összes Törlése: Törli az összes rögzített vásárlást.
+Használat
+Az alkalmazás egyszerű kezelőfelülettel rendelkezik. A főmenüből lehetőség van a különböző funkciók elérésére. Az útmutatókat és az elérhető opciókat az alkalmazás konzolos felületén lehet követni.
+
+Befejezés
+A Kasszagép Program egyszerű és hatékony eszköz vásárlások rögzítésére és kezelésére. Az alkalmazás segítségével könnyen navigálhatunk és nyomon követhetjük a vásárlási adatokat.
