@@ -28,6 +28,8 @@ namespace AFP_kasszagép
             {
                 k = Menu();
 
+                Console.WriteLine("Ide jönnek a menük majd");
+
 
             }
             while (k != ConsoleKey.Escape);
