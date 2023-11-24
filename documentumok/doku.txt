@@ -3,7 +3,7 @@ Bevezetés
 A Kasszagép Program egy olyan alkalmazás, amely lehetővé teszi a pénztárgép funkcióinak szimulálását. Az alkalmazás egy intuitív felhasználói felületen keresztül biztosítja a vásárlások kezelését és megjelenítését.
 
 Áttekintés
-A program az alábbi fő komponensekből áll:
+A program az alábbi fő komponensekből áll: balblabla
 
 Pénztárgép
 A Pénztárgép osztály felelős az alkalmazás fő vezérléséért. Tartalmazza a főmenüt, amelyen keresztül elérhetőek az egyes funkciók. Mindenütt az Esc billentyűt használhatjuk a vissza lépéshez az előző menühöz.
