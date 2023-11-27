@@ -52,3 +52,13 @@ Az alkalmazás jelenleg fejlesztés alatt áll. A fejlesztéshez vagy hibajelent
 Enjoy your meal! 🍔🍕🥗
 
 Ez a README fájl tartalmazza az alkalmazás leírását, a telepítés és futtatás lépéseit, valamint a fejlesztői információkat. Természetesen a README-t testreszabhatod az alkalmazásod specifikus jellemzőihez és igényeihez.
+
+
+### Fejlesztők:
+Czinege Genovéva
+Jusztin Noémi
+Méhész Benjámin
+Nagy János
+Olajos Máté
+Dénes Attila
+
