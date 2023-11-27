@@ -54,7 +54,7 @@ Enjoy your meal! 🍔🍕🥗
 Ez a README fájl tartalmazza az alkalmazás leírását, a telepítés és futtatás lépéseit, valamint a fejlesztői információkat. Természetesen a README-t testreszabhatod az alkalmazásod specifikus jellemzőihez és igényeihez.
 
 
-### Fejlesztők:
+### A csapat
 
 Czinege Genovéva
 Jusztin Noémi
