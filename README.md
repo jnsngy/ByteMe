@@ -1,4 +1,4 @@
-# Ételrendelő alkalmazás (AFP-projekt)
+# Ételrendelő alkalmazás
 
 Az ételrendelő alkalmazás egy egyszerű rendszer, amely lehetővé teszi az adminisztrátorok számára ételkategóriák, ételek, menük és megrendelések kezelését egy ételrendelő weboldalon.
 
