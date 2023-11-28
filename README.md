@@ -56,10 +56,10 @@ Ez a README fájl tartalmazza az alkalmazás leírását, a telepítés és futt
 
 ### A csapat
 
-Czinege Genovéva
-Jusztin Noémi
-Méhész Benjámin
-Nagy János
-Olajos Máté
+Czinege Genovéva  
+Jusztin Noémi  
+Méhész Benjámin  
+Nagy János  
+Olajos Máté  
 Dénes Attila
 
