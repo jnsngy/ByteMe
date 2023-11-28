@@ -31,3 +31,15 @@
                 $res = mysqli_query($conn, $sql);
 
                 $count = mysqli_num_rows($res);
+
+
+                if($count>0)
+                {
+                    while($row=mysqli_fetch_assoc($res))
+                    {
+                        $id = $row['id'];
+                        $title = $row['nev'];
+                        $price = $row['ar'];
+                        $description = $row['leiras'];
+                        $image_name= $row['kep_nev'];
+                        ?>
