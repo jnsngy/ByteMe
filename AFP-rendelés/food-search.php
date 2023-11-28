@@ -32,6 +32,7 @@
 
                 $count = mysqli_num_rows($res);
 
+
                 if($count>0)
                 {
                     while($row=mysqli_fetch_assoc($res))
