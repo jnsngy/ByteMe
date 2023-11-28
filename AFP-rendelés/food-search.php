@@ -32,7 +32,6 @@
 
                 $count = mysqli_num_rows($res);
 
-
                 if($count>0)
                 {
                     while($row=mysqli_fetch_assoc($res))
@@ -43,3 +42,23 @@
                         $description = $row['leiras'];
                         $image_name= $row['kep_nev'];
                         ?>
+
+
+                <div class="food-menu-box">
+                                <div class="food-menu-img">
+                                    <?php
+                                        if($image_name=="")
+                                        {
+                                            echo "<div class'error'>Ikon nem található</div>";
+                                        }
+                                        else
+                                        {
+                                            ?>
+    
+                                                <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name;?>" class="img-responsive img-curve">
+    
+                                            <?php
+                                        }
+                                    ?>
+                                </div>
+
