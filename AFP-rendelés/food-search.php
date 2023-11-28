@@ -84,3 +84,12 @@
 
 
             <div class="clearfix"></div>
+
+            
+
+        </div>
+
+    </section>
+    <!-- ételek menü vége -->
+
+    <?php include('partials-front/footer.php');?>
