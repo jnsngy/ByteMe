@@ -43,6 +43,7 @@
                         $image_name= $row['kep_nev'];
                         ?>
 
+
                 <div class="food-menu-box">
                                 <div class="food-menu-img">
                                     <?php
@@ -60,3 +61,4 @@
                                         }
                                     ?>
                                 </div>
+
