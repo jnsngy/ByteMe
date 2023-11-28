@@ -68,4 +68,10 @@
                                     <?php echo $description; ?>
                                     </p>
                                     <br>
+                                    <a href="#" class="btn btn-primary">Order Now</a>
+                                </div>
+                            </div>
 
+                        <?php
+                    }
+                }
