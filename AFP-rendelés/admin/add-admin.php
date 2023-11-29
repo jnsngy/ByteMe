@@ -31,6 +31,13 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td>Jelszó: </td>
+                    <td>
+                        <input type="password" name="jelszo" placeholder="Írd be a jelszavad">
+                    </td>
+                </tr>
+
             </table>
 
 
