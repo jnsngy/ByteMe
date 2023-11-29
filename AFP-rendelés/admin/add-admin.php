@@ -51,3 +51,16 @@
 
 </div>
 <?php include('partials/footer.php'); ?>
+
+<?php 
+    //az értéket az adatbázisba mentjük
+    //submit gomb meglett-e nyomva vagy nem
+    
+    if(isset($_POST['submit']))
+    {
+        //adat fogadása a formból
+        $teljes_nev = $_POST['teljes_nev'];
+        $felhasznalonev = $_POST['felhasznev'];
+        $jelszo = md5($_POST['jelszo']);  //jelszó titkosítás md5 módszerrel
+    }
+?>
