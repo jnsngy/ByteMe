@@ -69,5 +69,17 @@
         felhasznev='$felhasznalonev',
         jelszo='$jelszo'
     ";
+
+    //sql utasítások végrehajtása és mentése adatbázisba
+    $res = mysqli_query($conn, $sql) or die (mysqli_error());
+
+        //végrehajtás ellenőrzése, üzenet kiírása eredményről
+        if($res == TRUE){
+            //Bekerült;
+            //session változó az üzenethez
+            $_SESSION['add'] = "<div class='succes'>Admin sikeresen hozzáadva!</div>";
+            //elnavigálás az admin hozzáadás fülre
+            header("location:".SITEURL."admin/manage-admin.php");
+        }
     }
 ?>
