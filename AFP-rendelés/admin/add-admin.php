@@ -38,6 +38,12 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="submit" value="Admin hozzáadása" class="btn-secondary">
+                    </td>
+                </tr>
+
             </table>
 
 
