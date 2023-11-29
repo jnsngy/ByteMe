@@ -62,5 +62,12 @@
         $teljes_nev = $_POST['teljes_nev'];
         $felhasznalonev = $_POST['felhasznev'];
         $jelszo = md5($_POST['jelszo']);  //jelszó titkosítás md5 módszerrel
+
+        //sql az adatbázisba mentéshez
+        $sql = "INSERT INTO tbl_admin SET
+        teljes_nev='$teljes_nev',
+        felhasznev='$felhasznalonev',
+        jelszo='$jelszo'
+    ";
     }
 ?>
