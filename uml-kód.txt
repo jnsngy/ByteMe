@@ -1,0 +1,34 @@
+@startuml
+
+entity Admin {
+  + Adminok kezelése
+  + Ételek hozzáadása, kezelése
+  + Menük létrehozása, kezelése
+  + Megrendelések kezelése
+
+}
+
+entity Étel {
+  + Étel megjelenítése
+  + Hozzáadása
+  + Törlése
+  + Szerkesztése
+}
+
+entity Kategóriák {
+  + Kategória megjelenítése
+  + Hozzáadása
+  + Törlése
+  + Szerkesztése
+}
+
+entity Megrendelés {
+  + Megrendelése leadása
+  + Étel választása
+}
+
+Admin ||--o{ Étel 
+Admin ||--o{ Kategóriák 
+Admin ||--o{ Megrendelés 
+
+@enduml
