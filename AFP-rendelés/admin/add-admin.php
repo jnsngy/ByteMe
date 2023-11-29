@@ -81,5 +81,12 @@
             //elnavigálás az admin hozzáadás fülre
             header("location:".SITEURL."admin/manage-admin.php");
         }
+        else{
+            //Nem került be;
+            //session változó az üzenethez
+            $_SESSION['add']= "<div class='error' >Admin hozzáadása nem sikerült!</div>";
+            //elnavigálás az admin hozzáadás fülre
+            header("location".SITEURL."admin/add-admin.php");
+        }
     }
 ?>
