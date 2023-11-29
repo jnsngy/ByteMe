@@ -24,6 +24,13 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td>Felhasználónév: </td>
+                    <td>
+                        <input type="text" name="felhasznev" placeholder="Írd be a felhasználóneved">
+                    </td>
+                </tr>
+
             </table>
 
 
