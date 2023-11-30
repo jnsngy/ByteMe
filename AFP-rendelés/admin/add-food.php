@@ -90,6 +90,14 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td>Top termék </td>
+                    <td>
+                        <input type="radio" name="featured" value="Igen"> Igen
+                        <input type="radio" name="featured" value="Nem"> Nem
+                    </td>
+                </tr>
+
             </table>
         </form>
     </div>
