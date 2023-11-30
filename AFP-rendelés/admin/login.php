@@ -44,3 +44,23 @@
     </div>
 </body>
 </html>
+
+<?php
+    // meglett e nyomva a gomb
+    if(isset($_POST['submit']))
+    {
+        //adatok kinyerése a login formból
+        $username = $_POST['username'];
+        $password = md5($_POST['password']);
+
+        //sql a felhasznev és jelszó létezik-e 
+
+        $sql = "SELECT * FROM tbl_admin WHERE felhasznev='$username' AND jelszo='$password'";
+
+        //sql végrehajtása
+
+        $res = mysqli_query($conn, $sql);
+
+        // ellenőrzés, hogy a felhaszná létezik-e
+        $count = mysqli_num_rows($res);
+        
