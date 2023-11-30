@@ -79,3 +79,8 @@
         </div>
     </section>
     <!-- kategória rész vége -->
+
+     <!-- étel menü -->
+     <section class="food-menu">
+        <div class="container">
+            <h2 class="text-center">Ételek</h2>
