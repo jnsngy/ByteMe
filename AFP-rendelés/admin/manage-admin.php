@@ -101,6 +101,9 @@
                             <?php
                         }
                     }
+                    else{
+                        //nincs adatbázisban
+                    }
                  }
         
         
@@ -111,5 +114,3 @@
 
 </div>
 
-
-<?php include('partials/footer.php'); ?>
