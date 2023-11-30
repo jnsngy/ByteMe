@@ -170,3 +170,20 @@
                     //elnavigálás a kategória hozzáadás fülre
                     header("location:".SITEURL.'admin/manage-kategoria.php');
                 }
+                else
+                {
+                    //nem sikerült
+                    $_SESSION['add'] = "<div class='error'>Kategória hozzáadása nem sikerült</div>";
+                    //elnavigálás a kategória hozzáadás fülre
+                    header("location:".SITEURL.'admin/add-category.php');
+                }
+            }
+
+        ?>
+
+
+
+    </div>
+</div>
+
+<?php include('partials/footer.php'); ?>
