@@ -95,3 +95,25 @@
                         header('location:'.SITEURL.'admin/manage-admin.php');
                     }
                 }
+                else
+                {
+                    $_SESSION['not-match'] = "<div class='error'>A megadott jelszavak nem egyeznek. </div>";
+                    header('location:'.SITEURL.'admin/manage-admin.php');
+                }
+            }
+            else
+            {
+                $_SESSION['user-not-found'] = "<div class='error'>A felhasználó nem található. </div>";
+                header('location:'.SITEURL.'admin/manage-admin.php');
+            }
+        }
+
+
+
+    }
+
+?>
+
+
+
+<?php include('partials/footer.php'); ?>
