@@ -67,3 +67,10 @@
                         ?>
                     </td>
                 </tr>
+
+                <tr>
+                    <td>Új ikon: </td>
+                    <td>
+                        <input type="file" name="image" id="">
+                    </td>
+                </tr>
