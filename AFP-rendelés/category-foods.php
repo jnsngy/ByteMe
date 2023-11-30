@@ -101,3 +101,13 @@
                         <?php
                     }
                 }
+
+                else
+                {
+                    echo "<div class='error'>Étel nem található</div>";
+                }
+
+            ?>
+
+
+            <div class="clearfix"></div>
