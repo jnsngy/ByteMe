@@ -131,3 +131,16 @@
                         $upload = move_uploaded_file($source_path, $destination_path);
 
                         //fellett -e töltve vagy nem és átírányítás
+                        if($upload==FALSE)
+                        {
+                            //üzenet
+                            $_SESSION['upload'] = "<div class='error'>Képfeltöltés sikertelen</div>";
+                            header("location:".SITEURL.'admin/add-category.php');
+                            die();
+
+
+                        }
+
+                    }
+
+                }
