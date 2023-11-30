@@ -26,3 +26,16 @@
                     $featured = $row['jelleg'];
                     $active = $row['van_e'];
                 }
+                else
+                {
+                    $_SESSION['no-category-found'] = "<div class='error'>Kategória nem található</div>";
+                    header("location:".SITEURL.'admin/manage-kategoria.php');
+                }
+            }
+            else
+            {
+                header("location:".SITEURL.'admin/manage-category.php');
+            }
+
+
+        ?>
