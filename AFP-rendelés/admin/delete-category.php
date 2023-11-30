@@ -15,3 +15,12 @@
             $remove = unlink($path);
             
             //ha sikertelen a törlés akkor hibaüzenet és folyamat megszakítása
+            if($remove==FALSE)
+            {
+                $_SESSION['remove'] = "<div class='error'>Sikertelen törlés</div>";
+                header('location:'.SITEURL.'admin/manage-kategoria.php');
+
+                die();
+
+            }
+        }
