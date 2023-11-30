@@ -100,4 +100,23 @@
                 }
 
                 //fájl feltöltése
-                
+                if(isset($_FILES['image']['name']))
+                {
+                    //kép feltöltése
+
+                    //feltöltéshez kell a cél mappa és az cél mappa
+                    $image_name = $_FILES['image']['name'];
+
+                    if($image_name != "")
+                    {
+
+                    
+
+                        //auto-átnevezése a fájlnak
+                        //fájl kiterjesztése meghatározása (jpg, png, gif stb.) "kaja1.jpg"
+
+                        $ext = end(explode('.',$image_name));
+
+                        //átnevezés
+
+                        $image_name = "uj_kep_".rand(000, 999).'.'.$ext; //uj_kep258.jpg
