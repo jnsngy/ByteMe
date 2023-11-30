@@ -15,3 +15,17 @@ include('login-check.php');
 
 </head>
 <body>
+    <!--Menü szekció-->
+    <div class="menu text-center">
+        <div class="wrapper">
+            <ul>
+                <li><a href="index.php">Főoldal</a></li>
+                <li><a href="manage-admin.php">Admin</a></li>
+                <li><a href="manage-kategoria.php">Kategória</a></li>
+                <li><a href="manage-etel.php">Étel</a></li>
+                <li><a href="manage-rendeles.php">Rendelés</a></li>
+                <li><a href="logout.php">Kijelentkezés</a></li>
+            </ul>
+        </div>
+        
+    </div>
