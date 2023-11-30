@@ -69,4 +69,13 @@
                         <?php
                     }
                 }
-                
+                else
+                {
+                    echo "<div class='error'>Nincs kategória hozzáadva</div>";
+                }
+            ?>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- kategória rész vége -->
