@@ -8,3 +8,21 @@
 
         <?php
             if(isset($_GET['id']))
+
+            {
+                $id = $_GET['id'];
+
+                $sql = "SELECT * FROM tbl_kategoriak WHERE id=$id";
+
+                $res = mysqli_query($conn, $sql);
+
+                $count = mysqli_num_rows($res);
+
+                if($count==1)
+                {
+                    $row = mysqli_fetch_assoc($res);
+                    $title = $row['nev'];
+                    $current_image = $row['kep_neve'];
+                    $featured = $row['jelleg'];
+                    $active = $row['van_e'];
+                }
