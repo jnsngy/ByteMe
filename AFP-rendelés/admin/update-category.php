@@ -183,3 +183,26 @@
                         van_e = '$active'
                         WHERE id=$id
                 ";
+                $res2 = mysqli_query($conn, $sql2);
+
+                if($res2==TRUE)
+                {
+                    // kategória frissítése
+                    $_SESSION['update'] = "<div class='succes'>Sikeres frissítés</div>";
+                    header('location:'.SITEURL.'admin/manage-kategoria.php');
+                }
+                else
+                {
+                    // sikertelen frissítés
+                    $_SESSION['update'] = "<div class='error'>Sikertelen frissítés</div>";
+                    header('location:'.SITEURL.'admin/manage-kategoria.php');
+                }
+                
+            }
+        ?>
+        
+
+    </div>
+</div>
+
+<?php include('partials/footer.php'); ?> 
