@@ -10,3 +10,14 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+<body>
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a title="Logo">
+                    <img src="images/logo.jpg" alt="Restaurant Logo" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="menu text-right">
