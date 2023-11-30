@@ -158,3 +158,15 @@
                     jelleg = '$featured',
                     van_e = '$active'
                 ";
+                // sql futtatása és mentés
+                $res = mysqli_query($conn, $sql);
+
+                //lefutott e vagy nem
+
+                if($res==TRUE)
+                {
+                    //sikeres
+                    $_SESSION['add'] = "<div class='succes'>Kategória sikeresen hozzáadva</div>";
+                    //elnavigálás a kategória hozzáadás fülre
+                    header("location:".SITEURL.'admin/manage-kategoria.php');
+                }
