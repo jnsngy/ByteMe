@@ -47,3 +47,22 @@ a:hover{
     font-size: 1rem;
     border-radius: 5px;
 }
+
+.btn-primary{
+    background-color: #ffa502;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #ffa502;
+}
+h2{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+    color: white;
+}
