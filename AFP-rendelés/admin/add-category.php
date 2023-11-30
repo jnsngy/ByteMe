@@ -111,3 +111,23 @@
 
                     if($image_name != "")
                     {
+                        
+                    
+
+                        //auto-átnevezése a fájlnak
+                        //fájl kiterjesztése meghatározása (jpg, png, gif stb.) "kaja1.jpg"
+
+                        $ext = end(explode('.',$image_name));
+
+                        //átnevezés
+
+                        $image_name = "uj_kep_".rand(000, 999).'.'.$ext; //uj_kep258.jpg
+
+
+                        $source_path = $_FILES['image']['tmp_name'];
+                        $destination_path = "../images/category/".$image_name;
+
+                        //kép feltöltése
+                        $upload = move_uploaded_file($source_path, $destination_path);
+
+                        //fellett -e töltve vagy nem és átírányítás
