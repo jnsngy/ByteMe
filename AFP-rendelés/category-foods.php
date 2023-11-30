@@ -43,3 +43,27 @@
     <section class="food-menu">
         <div class="container">
             <h2 class="text-center">Ételek</h2>
+
+            <?php
+
+                //sql kód az ételek megjelenítésére a kategória alapján
+                $sql2 = "SELECT * FROM tbl_etel WHERE kategoria_id=$category_id";
+
+                // futtatás
+                $res2 = mysqli_query($conn, $sql2);
+
+                //sorok számolása
+
+                $count2 = mysqli_num_rows($res2);
+
+                //van e elérhető étel 
+                if($count2>0)
+                {
+                    while($row2=mysqli_fetch_assoc($res2))
+                    {
+                        $id = $row2['id'];
+                        $title = $row2['nev'];
+                        $price = $row2['ar'];
+                        $description = $row2['leiras'];
+                        $image_name= $row2['kep_nev'];
+                        ?>
