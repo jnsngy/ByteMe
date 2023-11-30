@@ -108,3 +108,14 @@
                                             }
                                          ?>
                                     </td>
+                                    <td><?php echo $featured; ?></td>
+                                    <td><?php echo $active; ?></td>
+                                    <td>
+                                        <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id;?>" class="btn-secondary">Szerkesztés</a>
+                                        <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id;?>&kep_neve=<?php echo $kep_neve;?>" class="btn-danger">Törlés</a>
+                                    </td>
+                                </tr>
+
+                                <?php 
+                            }
+                    }
