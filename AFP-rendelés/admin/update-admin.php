@@ -38,41 +38,44 @@
             }
 
      ?>   
-     <form action="" method="POST">
+        <form action="" method="POST">
 
-        <table class="tbl-30">
-            <tr>
-                <td>Teljes név: </td>
-                <td>
-                    <input type="text" name="teljes_nev" value="<?php echo $teljes_nev; ?>">
-                </td>
-            </tr>
+            <table class="tbl-30">
+                <tr>
+                    <td>Teljes név: </td>
+                    <td>
+                        <input type="text" name="teljes_nev" value="<?php echo $teljes_nev; ?>">
+                    </td>
+                </tr>
 
-            <tr>
-                <td>Felhasználónév: </td>
-                <td>
-                    <input type="text" name="felhasznev" value="<?php echo $felhasznalonev; ?>">
-                </td>
-            </tr>
+                <tr>
+                    <td>Felhasználónév: </td>
+                    <td>
+                        <input type="text" name="felhasznev" value="<?php echo $felhasznalonev; ?>">
+                    </td>
+                </tr>
 
-            <tr>
-                <td colspan="2">
-                    <input type="hidden" name="id" value="<?php echo $id; ?>">
-                    <input type="submit" name="submit" value="Admin szerkesztése" class="btn-secondary">
-                </td>
-            </tr> 
+                <tr>
+                    <td colspan="2">
+                        <input type="hidden" name="id" value="<?php echo $id; ?>">
+                        <input type="submit" name="submit" value="Admin szerkesztése" class="btn-secondary">
+                    </td>
+                </tr> 
 
-        </table>
+            </table>
 
-    </form>
-
-
-
-
-
-
-
+        </form>
 
     </div>
 
 </div>
+<?php 
+if(isset($_POST['submit']))
+{
+    // adatok kinyerése a formból és változtatás
+    $id = $_POST['id'];
+    $teljes_nev = $_POST['teljes_nev'];
+    $felhasznalonev = $_POST['felhasznev'];
+}
+
+?>
