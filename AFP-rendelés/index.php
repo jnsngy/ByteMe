@@ -35,3 +35,15 @@
                 $res = mysqli_query($conn, $sql);
                 // sorok számolása hogy van e kategória
                 $count = mysqli_num_rows($res);
+
+                if($count > 0)
+                {
+                    while($row = mysqli_fetch_assoc($res))
+                    {
+                        $id = $row['id'];
+                        $title = $row['nev'];
+                        $image_name = $row['kep_neve'];
+                        ?>
+
+                        <a href="<?php echo SITEURL; ?>category-foods.php?category_id=<?php echo $id; ?>">
+                            <div class="box-3 float-container">
