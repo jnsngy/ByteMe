@@ -47,3 +47,17 @@
                         <input type="radio" name="featured" value="Nem"> Nem
                     </td>
                 </tr>
+                <tr>
+                    <td>Van-e készleten: </td>
+                    <td>
+                        <input type="radio" name="active" value="Igen"> Igen
+                        <input type="radio" name="active" value="Nem"> Nem
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="submit" value="Kategória hozzáadása" class="btn-secondary">
+                    </td>
+                </tr>
+            </table>
