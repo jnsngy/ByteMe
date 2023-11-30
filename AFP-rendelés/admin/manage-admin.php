@@ -77,12 +77,24 @@
 
                      $sn=1; //változó létrehozása a sorszám kezeléséhez
 
+                     if($count >0)
 
+                     {
+                        while($rows=mysqli_fetch_assoc($res))
+                        {
+                            //adatok kinyerése az adatbázisból while ciklussal
+
+                            $id=$rows['id'];
+                            $teljes_nev=$rows['teljes_nev'];
+                            $felhasznev=($rows['felhasznev']);
+                            ?>
+                        }
+                    }
                  }
         
         
         ?>
-
+        </table>
     </div>
 
 
