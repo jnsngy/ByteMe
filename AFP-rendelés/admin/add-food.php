@@ -98,6 +98,14 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td>Van-e készleten: </td>
+                    <td>
+                        <input type="radio" name="active" value="Igen"> Igen
+                        <input type="radio" name="active" value="Nem"> Nem
+                    </td>
+                </tr>
+
             </table>
         </form>
     </div>
