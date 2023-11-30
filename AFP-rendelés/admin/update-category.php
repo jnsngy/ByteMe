@@ -91,3 +91,11 @@
                         <input <?php if($active=="Nem"){echo "checked";} ?> type="radio" name="active" value="Nem"> Nem
                     </td>
                 </tr>
+
+                <tr>
+                    <td>
+                        <input type="hidden" name="current_image" value="<?php echo $current_image; ?>">
+                        <input type="hidden" name="id" value="<?php echo $id; ?>">
+                        <input type="submit" name="submit" value="Kategória frissítése" class="btn-secondary">
+                    </td>
+                </tr>
