@@ -18,3 +18,18 @@
                 echo $_SESSION['remove']; //üzenet kiírása
                 unset($_SESSION['remove']); //üzenet eltávolítása
             }
+            if(isset($_SESSION['delete']))
+            {
+                echo $_SESSION['delete']; //üzenet kiírása
+                unset($_SESSION['delete']); //üzenet eltávolítása
+            }
+            if(isset($_SESSION['no-category-found']))
+            {
+                echo $_SESSION['no-category-found']; //üzenet kiírása
+                unset($_SESSION['no-category-found']); //üzenet eltávolítása
+            }
+            if(isset($_SESSION['update']))
+            {
+                echo $_SESSION['update']; //üzenet kiírása
+                unset($_SESSION['update']); //üzenet eltávolítása
+            }
