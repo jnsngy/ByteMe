@@ -39,3 +39,12 @@
 
 
         ?>
+
+<form action="" method="POST" enctype="multipart/form-data">
+            <table class="tbl-30">
+                <tr>
+                    <td>Név: </td>
+                    <td>
+                        <input type="text" name="title" value="<?php echo $title; ?>">
+                    </td>
+                </tr>
