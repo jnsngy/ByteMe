@@ -93,3 +93,15 @@
                 $res2 = mysqli_query($conn, $sql2);
 
                 $count2 = mysqli_num_rows($res2);
+
+                if($count2 > 0)
+                {
+                    while($row=mysqli_fetch_assoc($res2))
+                    {
+                        $id = $row['id'];
+                        $title = $row['nev'];
+                        $price = $row['ar'];
+                        $description = $row['leiras'];
+                        $image_name = $row['kep_nev'];
+                        ?>
+                        
