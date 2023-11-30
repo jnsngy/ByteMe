@@ -13,3 +13,16 @@
         // sql futtatása
 
         $res = mysqli_query($conn, $sql);
+
+        // érték kinyerése az adatbázisból
+
+        $row = mysqli_fetch_assoc($res);
+
+        $category_title = $row['nev'];
+    }
+    else
+    {
+        header('location:'.SITEURL);
+    }
+
+?>
