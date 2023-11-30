@@ -36,4 +36,20 @@
                         $image_name = $row['kep_nev'];
                         ?>
                             <div class="food-menu-box">
-                
+                            <div class="food-menu-img">
+                                    <?php 
+                                    // van e kép 
+                                    if($image_name=="")
+                                    {
+                                        echo "<div class'error'>Ikon nem található</div>";
+                                    }
+                                    else
+                                    {
+                                        ?>
+
+                                            <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name;?>" class="img-responsive img-curve">
+
+                                        <?php
+                                    }
+                                ?>
+                                </div>
