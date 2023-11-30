@@ -36,3 +36,22 @@
         </div>
     </section>
     <!-- keresés rész vége -->
+    <!-- menü kezdete -->
+    <section class="food-menu">
+        <div class="container">
+            <h2 class="text-center">Ételek</h2>
+
+            <?php
+
+                //sql kód az ételek megjelenítésére a kategória alapján
+                $sql2 = "SELECT * FROM tbl_etel WHERE kategoria_id=$category_id";
+
+                // futtatás
+                $res2 = mysqli_query($conn, $sql2);
+
+                //sorok számolása
+
+                $count2 = mysqli_num_rows($res2);
+
+                //van e elérhető étel 
+                if($count2>0)
