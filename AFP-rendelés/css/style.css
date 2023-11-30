@@ -66,3 +66,28 @@ h3{
     font-size: 1.5rem;
     color: white;
 }
+
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.error{
+    padding: 2%;
+    color: red;
+}
+
+.succes{
+    padding: 2%;
+    color: green;
+}
