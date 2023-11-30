@@ -73,3 +73,20 @@
                     $count = mysqli_num_rows($res); 
 
                     $sn=1; //változó létrehozása a sorszám kezeléséhez
+                    if($count>0)
+                    {
+                        //van adat
+                        while($rows=mysqli_fetch_assoc($res))
+                            {
+                                //adatok kinyerése az adatbázisból while ciklussal
+
+                                $id=$rows['id'];
+                                $nev=$rows['nev'];
+                                $kep_neve=$rows['kep_neve'];
+                                $featured=$rows['jelleg'];
+                                $active=$rows['van_e'];
+                                ?>
+
+                                <tr>
+                                    <td><?php echo $sn++; ?></td>
+                                    <td><?php echo $nev; ?></td>
