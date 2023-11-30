@@ -176,3 +176,22 @@
                 {
                     $image_name = $current_image;
                 }
+
+                //adatbázis frissítése
+
+                $sql2 = "UPDATE tbl_kategoriak SET
+                        nev = '$title',
+                        kep_neve = '$image_name',
+                        jelleg = '$featured',
+                        van_e = '$active'
+                        WHERE id=$id
+                ";
+
+                $res2 = mysqli_query($conn, $sql2);
+
+                if($res2==TRUE)
+                {
+                    // kategória frissítése
+                    $_SESSION['update'] = "<div class='succes'>Sikeres frissítés</div>";
+                    header('location:'.SITEURL.'admin/manage-kategoria.php');
+                }
