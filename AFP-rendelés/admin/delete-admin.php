@@ -12,7 +12,15 @@
     //sql kód végrehajtása
 
     $res = mysqli_query( $conn,$sql );
-    
+
+
+    if($res==TRUE)
+    {
+        // sikeres, törlődött
+        // üzenet kiírására
+        $_SESSION['delete'] = "<div class='succes'>Admin törölve</div>";
+        header('location:'.SITEURL.'admin/manage-admin.php');
+    }
 
 
  ?>
