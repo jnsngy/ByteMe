@@ -144,3 +144,17 @@
                     }
 
                 }
+                else
+                {
+                    //nem töltjük fel a képet és az értéket üresre állítjuk
+                    $image_name="";
+                }
+                
+                //sql
+
+                $sql = "INSERT INTO tbl_kategoriak SET
+                    nev = '$title',
+                    kep_neve = '$image_name',
+                    jelleg = '$featured',
+                    van_e = '$active'
+                ";
