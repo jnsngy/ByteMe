@@ -45,6 +45,33 @@
         
         ?>
 
+        <br /><br /><br />
+
+
+        <!-- Admin hozzáadása gomb -->
+
+        <a href="add-admin.php" class="btn-primary">Admin hozzáadása</a>
+
+        <br /><br /><br />
+        <table class="tbl-full">
+        <tr>
+            <th>ID</th>
+            <th>Teljes név</th>
+            <th>Felhasználónév</th>
+            <th>Szerkesztés</th>
+        </tr>
+        
+        <?php 
+
+            
+                // adminok megjelenítése
+                $sql = "SELECT * FROM tbl_admin";
+                //végrehajtása a kódnak
+                $res = mysqli_query($conn, $sql);
+        
+        
+        ?>
+
     </div>
 
 
