@@ -106,6 +106,12 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="submit" value="Étel hozzáadása" class="btn-secondary">
+                    </td>
+                </tr>
+
             </table>
         </form>
     </div>
