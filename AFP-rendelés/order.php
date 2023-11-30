@@ -138,4 +138,27 @@
                         rendelo_email = '$customer_email',
                         rendelo_cim = '$customer_addres'
                     ";
-                    
+
+                    $res2 = mysqli_query($conn, $sql2);
+
+                    if($res2 == TRUE)
+                    {
+                        $_SESSION['order'] = "<div class='succes text-center'>Sikeres megrendelés</div>";
+                        header('location:'.SITEURL);
+                    }
+                    else
+                    {
+                        $_SESSION['order'] = "<div class='error text-center'>Sikertelen megrendelés!</div>";
+                        header('location:'.SITEURL);
+                    }
+
+                    }
+
+
+                    ?>
+
+                    </div>
+                    </section>
+                    <!-- keresés vége -->
+
+                    <?php include('partials-front/footer.php');?>
