@@ -1,7 +1,7 @@
 <!-- footer kezdete -->
 <section class="footer">
         <div class="container text-center">
-        <p class="text-center">Bigga Nurger megbízásából készítette: Méhész Benjámin</p>
+        <p class="text-center">Bigga Nurger megbízásából készítette: ByteMe Solutions</p>
         </div>
     </section>
     <!-- footer vége -->
