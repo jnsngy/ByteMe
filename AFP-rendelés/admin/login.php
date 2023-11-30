@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body>
-
-<div class="login">
+    <div class="login">
         <h1 class="text-center">Bejelentkezés</h1> <br><br>
 
         <?php
@@ -29,8 +28,8 @@
 
         <br><br>
 
-         <!-- bejelentkezés form -->
-         <form action="" method="POST" class="text-center">
+        <!-- bejelentkezés form -->
+        <form action="" method="POST" class="text-center">
             Felhasználónév: <br>
             <input type="text" name="username" placeholder="Felhasználónév megadása"><br><br>
             Jelszó: <br>
@@ -64,3 +63,21 @@
         // ellenőrzés, hogy a felhaszná létezik-e
         $count = mysqli_num_rows($res);
         
+        if($count==1)
+        {
+            $_SESSION['login'] = "<div class='succes'>Sikeres bejelentkezés.</div>";
+            $_SESSION['user'] = $username; //a felhasználó be van e jelentkezve vagy nem
+
+
+
+            //ha sikeres átirányítás
+            header('location:'.SITEURL.'admin/');
+        }
+        else
+        {
+            $_SESSION['login'] = "<div class='error text-center'>Sikertelen bejelentkezés.</div>";
+            //ha sikertelen átirányítás
+            header('location:'.SITEURL.'admin/login.php');
+        }
+    }
+?>
