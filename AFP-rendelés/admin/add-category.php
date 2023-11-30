@@ -79,3 +79,16 @@
                     //érték kinyerése a formból
                     $featured = $_POST['featured'];
                 }
+                else
+                {
+                    //alap érték beállítása
+                    $featured = 'Nem';
+
+                }
+
+                if(isset($_POST['active']))
+                {
+                    //érték kinyerése a formból
+
+                    $active = $_POST['active'];
+                }
