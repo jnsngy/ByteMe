@@ -162,3 +162,24 @@
                         }
                         
                     }
+                    else
+                    {
+                        $image_name = $current_image;
+
+                    }
+
+                }
+                else
+                {
+                    $image_name = $current_image;
+                }
+
+                //adatbázis frissítése
+
+                $sql2 = "UPDATE tbl_kategoriak SET
+                        nev = '$title',
+                        kep_neve = '$image_name',
+                        jelleg = '$featured',
+                        van_e = '$active'
+                        WHERE id=$id
+                ";
