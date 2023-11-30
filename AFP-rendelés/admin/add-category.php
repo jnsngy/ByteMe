@@ -158,3 +158,18 @@
                 $res = mysqli_query($conn, $sql);
 
                 //lefutott e vagy nem
+
+                if($res==TRUE)
+                {
+                    //sikeres
+                    $_SESSION['add'] = "<div class='succes'>Kategória sikeresen hozzáadva</div>";
+                    //elnavigálás a kategória hozzáadás fülre
+                    header("location:".SITEURL.'admin/manage-kategoria.php');
+                }
+                else
+                {
+                    //nem sikerült
+                    $_SESSION['add'] = "<div class='error'>Kategória hozzáadása nem sikerült</div>";
+                    //elnavigálás a kategória hozzáadás fülre
+                    header("location:".SITEURL.'admin/add-category.php');
+                }
