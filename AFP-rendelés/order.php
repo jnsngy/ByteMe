@@ -82,3 +82,22 @@
                         </div>
 
                     </fieldset>
+
+                    <fieldset>
+                    <legend class="inline">Rendelés adatai</legend>
+                    <div class="order-label">Teljes név</div>
+                    <input type="text" name="full-name" placeholder="pl. Vnév KNév" class="input-responsive" required>
+
+                    <div class="order-label">Telefonszám</div>
+                    <input type="tel" name="contact" placeholder="pl. 06301234567" class="input-responsive" required>
+
+                    <div class="order-label">Email</div>
+                    <input type="email" name="email" placeholder="pl. x.y@gmail.com" class="input-responsive" required>
+
+                    <div class="order-label">Cím</div>
+                    <textarea name="address" rows="10" placeholder="pl. Város, Utca, Házszám" class="input-responsive" required></textarea>
+
+                    <input type="submit" name="submit" value="Rendeles leadása" class="btn btn-primary">
+                </fieldset>
+
+            </form>
