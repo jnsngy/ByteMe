@@ -48,4 +48,21 @@
                     <legend class="inline">Kiválasztott étel</legend>
 
                     <div class="food-menu-img">
-                        
+                    <?php 
+
+                        //van e ikon vagy nem 
+                        if($image_name=="")
+                        {
+                            //nincs kép
+                            echo "<div class='error'>Ikon nem elérhető</div";
+                        }
+                        else
+                        {
+                            //van kép 
+                            ?>
+                            <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" class="img-responsive img-curve">
+                            <?php
+                        }
+
+
+                        ?>   
