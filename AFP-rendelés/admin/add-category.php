@@ -92,3 +92,12 @@
 
                     $active = $_POST['active'];
                 }
+                else
+                {
+                    //alap érték beállítása
+
+                    $active = 'Nem';
+                }
+
+                //fájl feltöltése
+                
