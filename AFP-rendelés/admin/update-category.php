@@ -195,3 +195,19 @@
                     $_SESSION['update'] = "<div class='succes'>Sikeres frissítés</div>";
                     header('location:'.SITEURL.'admin/manage-kategoria.php');
                 }
+
+                else
+                {
+                    // sikertelen frissítés
+                    $_SESSION['update'] = "<div class='error'>Sikertelen frissítés</div>";
+                    header('location:'.SITEURL.'admin/manage-kategoria.php');
+                }
+                
+            }
+        ?>
+        
+
+    </div>
+</div>
+
+<?php include('partials/footer.php'); ?> 
