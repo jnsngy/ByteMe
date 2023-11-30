@@ -57,3 +57,20 @@
         $jelenlegi_jelszo = md5($_POST['jelenlegi_jelszo']);  //jelszó titkosítás md5 módszerrel
         $uj_jelszo = md5($_POST['uj_jelszo']);
         $jelszo_megerosit = md5($_POST['jelszo_megerosit']);
+        // létezik e a jelszó az adatbázisban
+
+        $sql = "SELECT * FROM tbl_admin WHERE id=$id AND jelszo='$jelenlegi_jelszo'";
+
+
+        //sql végrehajtása
+        $res = mysqli_query($conn, $sql);
+
+        if($res==TRUE)
+        {
+            $count=mysqli_num_rows($res);
+
+            if($count==1)
+            {
+                // az új jelszavak egyeznek-e 
+                if($uj_jelszo==$jelszo_megerosit)
+                {
