@@ -98,3 +98,21 @@
                         <?php
                     }
                 }
+                else
+                {
+                    echo "<div class='error'>Étel nem található</div>";
+                }
+
+            ?>
+
+
+            <div class="clearfix"></div>
+
+            
+
+        </div>
+
+    </section>
+    <!-- menü vége -->
+
+    <?php include('partials-front/footer.php');?>
