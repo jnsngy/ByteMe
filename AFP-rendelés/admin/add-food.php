@@ -36,6 +36,13 @@
                         <input type="number" name="price">
                     </td>
                 </tr>
+
+                
+                <tr>
+                    <td>Kategória: </td>
+                    <td></td>
+                </tr>
+
             </table>
         </form>
     </div>
