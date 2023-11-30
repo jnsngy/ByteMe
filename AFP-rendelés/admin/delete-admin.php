@@ -20,7 +20,10 @@
         // üzenet kiírására
         $_SESSION['delete'] = "<div class='succes'>Admin törölve</div>";
         header('location:'.SITEURL.'admin/manage-admin.php');
+    } else{
+        //nem sikerült, nem törlődött
+        $_SESSION['delete'] = "<div class='error' >Admin törlése nem sikerült!</div>";
+        header('location:'.SITEURL.'admin/manage_admin.php');
     }
-
 
  ?>
