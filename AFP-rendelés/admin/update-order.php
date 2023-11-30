@@ -98,4 +98,15 @@
                             <textarea name="customer_address" cols="30" rows="5"><?php echo $customer_addres; ?></textarea>
                         </td>
                     </tr>
-                    
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="hidden" name="id" value="<?php echo $id; ?>">
+                            <input type="hidden" name="price" value="<?php echo $price; ?>">
+
+                            <input type="submit" name="submit" value="Rendelés frissítése" class="btn-secondary">
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
