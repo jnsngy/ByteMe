@@ -90,3 +90,21 @@
                                 <tr>
                                     <td><?php echo $sn++; ?></td>
                                     <td><?php echo $nev; ?></td>
+                                    <td>
+                                        <?php 
+                                        //van e kép vagy nincs
+                                            if($kep_neve!="")
+                                            {
+                                                //kép megjelenítése
+                                                ?>
+                                                <img src="<?php echo SITEURL; ?>images/category/<?php echo $kep_neve;?>" width="50px">
+
+                                                <?php
+                                            }
+                                            else
+                                            {
+                                                //nincs kép
+                                                echo "<div class='error'><Nem lett hozzáadva kép</div>";
+                                            }
+                                         ?>
+                                    </td>
