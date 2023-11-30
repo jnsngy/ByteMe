@@ -15,4 +15,11 @@
     </section>
     <!-- keresés vége -->
 
+    <?php 
+        if(isset($_SESSION['order']))
+        {
+            echo $_SESSION['order']; //üzenet kiírása
+            unset($_SESSION['order']); //üzenet eltávolítása
+        }
+    ?>
     
