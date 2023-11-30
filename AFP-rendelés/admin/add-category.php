@@ -34,3 +34,49 @@
                         <input type="text" name="title" placeholder="Kategória neve">
                     </td>
                 </tr>
+
+                <tr>
+                    <td>Ikon kiválasztása: </td>
+                    <td>
+                        <input type="file" name="image">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Top termék: </td>
+                    <td>
+                        <input type="radio" name="featured" value="Igen"> Igen
+                        <input type="radio" name="featured" value="Nem"> Nem
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Van-e készleten: </td>
+                    <td>
+                        <input type="radio" name="active" value="Igen"> Igen
+                        <input type="radio" name="active" value="Nem"> Nem
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="submit" value="Kategória hozzáadása" class="btn-secondary">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+        <!-- Kategória hozzáadás vége-->
+
+        <?php
+            //az értéket az adatbázisba mentjük
+            //submit gomb meglett-e nyomva vagy nem
+
+            if(isset($_POST['submit']))
+            {
+                //adat fogadása a formból
+                $title = $_POST['title'];
+
+                //radio kilett-e választva vagy nem
+
+                if(isset($_POST['featured']))
