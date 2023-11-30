@@ -128,3 +128,15 @@ fieldset{
     border: none;
     border-radius: 5px;
 }
+
+/* CSS a kategóriákhoz */
+.categories{
+    padding: 4% 0;
+}
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
