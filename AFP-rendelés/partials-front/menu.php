@@ -21,3 +21,18 @@
             </div>
 
             <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="<?php echo SITEURL; ?>admin/login.php">Admin login</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo SITEURL; ?>">Kezdőlap</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo SITEURL; ?>categories.php">Kategóriák</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo SITEURL; ?>foods.php">Ételek</a>
+                    </li>
+                </ul>
+            </div>
