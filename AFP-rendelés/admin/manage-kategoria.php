@@ -109,3 +109,34 @@
                                             }
                                          ?>
                                     </td>
+                                    <td><?php echo $featured; ?></td>
+                                    <td><?php echo $active; ?></td>
+                                    <td>
+                                        <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id;?>" class="btn-secondary">Szerkesztés</a>
+                                        <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id;?>&kep_neve=<?php echo $kep_neve;?>" class="btn-danger">Törlés</a>
+                                    </td>
+                                </tr>
+
+                                <?php 
+                            }
+                    }
+                    else
+                    {
+                        //nincs adat
+                        ?>
+                        <tr>
+                            <td colspan="6"><div class="error">Nem lett hozzáadva kategória.</div></td>
+                        </tr>
+                        <?php
+                    }
+
+                    
+                    
+                    
+
+                ?>
+            </table>
+        </div>
+    </div>
+
+<?php include('partials/footer.php'); ?> 
