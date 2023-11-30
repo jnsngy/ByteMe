@@ -38,3 +38,31 @@
 
 
         ?>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <table class="tbl-30">
+                <tr>
+                    <td>Név: </td>
+                    <td>
+                        <input type="text" name="title" value="<?php echo $title; ?>">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Jelenlegi ikon: </td>
+                    <td>
+                        <?php
+                            if($current_image != "")
+                            {
+                                //kép megjelenítése
+                                ?>
+                                <img src="<?php echo SITEURL; ?>images/category/<?php echo $current_image; ?>" width="50px">
+                                <?php
+                            }
+                            else
+                            {
+                                echo "<div class='error'>Nem lett ikon hozzáadva</div>";
+                                
+                            }
+                        ?>
+                    </td>
+                </tr>
