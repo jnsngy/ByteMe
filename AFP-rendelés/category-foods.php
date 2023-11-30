@@ -19,3 +19,20 @@
         $row = mysqli_fetch_assoc($res);
 
         $category_title = $row['nev'];
+    }
+    else
+    {
+        header('location:'.SITEURL);
+    }
+
+?>
+
+    <!-- keresés rész kezdődik -->
+    <section class="food-search text-center">
+        <div class="container">
+            
+            <h2>Ételek a keresés alapján: <a href="#" class="text-white">"<?php echo $category_title?>"</a></h2>
+
+        </div>
+    </section>
+    <!-- keresés rész vége -->
