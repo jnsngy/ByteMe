@@ -13,3 +13,26 @@
         $res = mysqli_query($conn, $sql);
 
         $count = mysqli_num_rows($res);
+
+        if($count==1)
+        {
+            // van adatunk 
+            $row = mysqli_fetch_assoc($res);
+            $title = $row['nev'];
+            $price = $row['ar'];
+            $image_name = $row['kep_nev'];
+
+        }
+        else
+        {
+            // nincs adatunk 
+            header('location:'.SITEURL);
+        }
+    }
+    else
+    {
+        // átirányítás a főoldalra
+        header('location:'.SITEURL);
+    }
+
+?>
