@@ -74,3 +74,12 @@
                         <input type="file" name="image" id="">
                     </td>
                 </tr>
+
+                <tr>
+                    <td>Top termék: </td>
+                    <td>
+                        <input <?php if($featured=="Igen"){echo "checked";} ?> type="radio" name="featured" value="Igen"> Igen
+
+                        <input <?php if($featured=="Nem"){echo "checked";} ?> type="radio" name="featured" value="Nem"> Nem
+                    </td>
+                </tr>
