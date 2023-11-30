@@ -173,3 +173,14 @@
                     //elnavigálás a kategória hozzáadás fülre
                     header("location:".SITEURL.'admin/add-category.php');
                 }
+            }
+
+            ?>
+    
+    
+    
+        </div>
+    </div>
+    
+    <?php include('partials/footer.php'); ?>
+    
