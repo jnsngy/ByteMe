@@ -71,3 +71,14 @@
                     }
 
                 }
+                else
+                {
+                    // nincs
+                    echo "<div class='error'>Étel nem található</div>";
+                }
+
+            ?>
+
+            <div class="clearfix"></div>
+
+        </div>
