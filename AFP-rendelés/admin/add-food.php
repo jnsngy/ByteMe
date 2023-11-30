@@ -40,7 +40,47 @@
                 
                 <tr>
                     <td>Kategória: </td>
-                    <td></td>
+                    <td>
+                    <select name="category">
+
+                        <?php 
+                            //az adatbázisban lévő kategóriák megjelenítése
+                            //aktív kategóriák kinyerése
+
+                            $sql = "SELECT * FROM tbl_kategoriak WHERE van_e='Igen'";
+
+                            $res = mysqli_query($conn, $sql);
+
+                            //sorok számolása
+                            $count = mysqli_num_rows($res);
+
+                            if($count>0)
+                            {
+                                //van kategóriánk
+                                while($row = mysqli_fetch_assoc($res))
+                                {
+                                    //kategória adatok
+                                    $id = $row['id'];
+                                    $title = $row['nev'];
+                                    ?>
+                                        <option value="<?php echo $id ?>"><?php echo $title; ?></option>
+                                    <?php
+                                }
+                            }
+                            else
+                            {
+                                //nincs kategóriánk
+                                ?>
+                                <option value="0">Nem található kategória</option>
+                                <?php
+                            }
+
+                        ?>
+
+
+
+                        </select>
+                    </td>
                 </tr>
 
             </table>
