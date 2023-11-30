@@ -35,11 +35,24 @@
                     // nincs meg az adott sorszámú admin
                     header('location:'.SITEURL.'admin/manage-admin.php');
                 }
-        }
-     
-     
-     
+            }
+
      ?>   
+      <form action="" method="POST">
+
+        <table class="tbl-30">
+            <tr>
+                <td>Teljes név: </td>
+                <td>
+                    <input type="text" name="teljes_nev" value="<?php echo $teljes_nev; ?>">
+                </td>
+            </tr>
+
+        
+
+        </table>
+
+</form>
 
 
 
