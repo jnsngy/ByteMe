@@ -27,6 +27,21 @@
                 echo $_SESSION['update']; //üzenet kiírása
                 unset($_SESSION['update']); //üzenet eltávolítása
             }
+            if(isset($_SESSION['user-not-found']))
+            {
+                echo $_SESSION['user-not-found']; //üzenet kiírása
+                unset($_SESSION['user-not-found']); //üzenet eltávolítása
+            }
+            if(isset($_SESSION['not-match']))
+            {
+                echo $_SESSION['not-match']; //üzenet kiírása
+                unset($_SESSION['not-match']); //üzenet eltávolítása
+            }
+            if(isset($_SESSION['change-pwd']))
+            {
+                echo $_SESSION['change-pwd']; //üzenet kiírása
+                unset($_SESSION['change-pwd']); //üzenet eltávolítása
+            }
         
         ?>
 
