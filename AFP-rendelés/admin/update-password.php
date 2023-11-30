@@ -40,3 +40,20 @@
                         <input type="submit" name="submit" value="Jelszó megváltoztatása" class="btn-secondary">
                     </td>
                 </tr> 
+                </table>
+        </form>
+
+    </div>
+</div>
+
+<?php
+    
+    //submit gomb meglett-e nyomva vagy nem
+
+    if(isset($_POST['submit']))
+    {
+        //adat fogadása a formból
+        $id=$_POST['id'];
+        $jelenlegi_jelszo = md5($_POST['jelenlegi_jelszo']);  //jelszó titkosítás md5 módszerrel
+        $uj_jelszo = md5($_POST['uj_jelszo']);
+        $jelszo_megerosit = md5($_POST['jelszo_megerosit']);
