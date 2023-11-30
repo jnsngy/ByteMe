@@ -119,3 +119,23 @@
                                 <?php 
                             }
                     }
+                    else
+                    {
+                        //nincs adat
+                        ?>
+                        <tr>
+                            <td colspan="6"><div class="error">Nem lett hozzáadva kategória.</div></td>
+                        </tr>
+                        <?php
+                    }
+
+                    
+                    
+                    
+
+                ?>
+            </table>
+        </div>
+    </div>
+
+<?php include('partials/footer.php'); ?> 
