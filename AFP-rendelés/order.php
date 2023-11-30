@@ -66,3 +66,19 @@
 
 
                         ?>   
+
+                    </div>
+                        
+                        <div class="food-menu-desc">
+                            <h3><?php echo $title; ?></h3>
+                            <input type="hidden" name="food" value="<?php echo $title; ?>">
+
+                            <p class="food-price"><?php echo $price; ?> Ft</p>
+                            <input type="hidden" name="price" value="<?php echo $price; ?>">
+
+                            <div class="order-label">Quantity</div>
+                            <input type="number" name="qty" class="input-responsive" value="1" required>
+                            
+                        </div>
+
+                    </fieldset>
