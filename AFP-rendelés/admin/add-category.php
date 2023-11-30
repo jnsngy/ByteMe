@@ -120,3 +120,22 @@
                         //átnevezés
 
                         $image_name = "uj_kep_".rand(000, 999).'.'.$ext; //uj_kep258.jpg
+                        $source_path = $_FILES['image']['tmp_name'];
+                        $destination_path = "../images/category/".$image_name;
+
+                        //kép feltöltése
+                        $upload = move_uploaded_file($source_path, $destination_path);
+
+                        //fellett -e töltve vagy nem és átírányítás
+
+                        if($upload==FALSE)
+                        {
+                            //üzenet
+                            $_SESSION['upload'] = "<div class='error'>Képfeltöltés sikertelen</div>";
+                            header("location:".SITEURL.'admin/add-category.php');
+                            die();
+
+
+                        }
+
+                    }
