@@ -140,3 +140,42 @@ fieldset{
     margin: 2%;
 }
 
+/* CSS az étel menühöz */
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+    color: white;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+.inline{
+    color: white;
+}
+
