@@ -82,3 +82,7 @@
             <div class="clearfix"></div>
 
         </div>
+    </section>
+    <!-- menü vége -->
+
+    <?php include('partials-front/footer.php');?>
