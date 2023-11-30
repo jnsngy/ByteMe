@@ -97,3 +97,22 @@
                         <input type="submit" name="submit" value="Kategória frissítése" class="btn-secondary">
                     </td>
                 </tr>
+                </table>
+        </form>
+
+        <?php
+            if(isset($_POST['submit']))
+            {
+                //form-ból adatok megszerzése
+                $id = $_POST['id'];
+                $title = $_POST['title'];
+                $current_image = $_POST['current_image'];
+                $featured = $_POST['featured'];
+                $active = $_POST['active'];
+
+                //új kép hozzáadása
+                if(isset($_FILES['image']['name']))
+                {
+                    $image_name = $_FILES['image']['name'];
+
+                    //van-e elérhető kép 
