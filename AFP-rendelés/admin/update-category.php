@@ -136,3 +136,29 @@
                         $upload = move_uploaded_file($source_path, $destination_path);
 
                         //fellett-e töltve vagy nem és átírányítás
+                        if($upload==FALSE)
+                        {
+                            //üzenet
+                            $_SESSION['upload'] = "<div class='error'>Képfeltöltés sikertelen</div>";
+                            header("location:".SITEURL.'admin/manage-kategoria.php');
+                            die();
+
+
+                        }
+
+                        // régi kép törlése
+                        if($current_image != "")
+                        {
+                            $remove_path = "../images/category/".$current_image;
+                            $remove = unlink($remove_path);
+
+                            //törölve lett a kép vagy nem
+                            if($remove==FALSE)
+                            {
+                                $_SESSION['törlés-sikertelen'] = "<div class='error'>Jelenlegi kép törlése sikertelen</div>";
+                                header("location:".SITEURL.'admin/manage-kategoria.php');
+                                die();
+                            }
+                        }
+                        
+                    }
