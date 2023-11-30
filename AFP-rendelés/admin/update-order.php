@@ -43,4 +43,35 @@
             
             ?>
 
-            
+            <form action="" method="POST">
+
+            <table class="tbl-30">
+                <tr>
+                    <td>Étel neve</td>
+                    <td><b> <?php echo $food; ?> </b></td>
+                </tr>
+
+                <tr>
+                    <td>Ár: </td>
+                    <td><b> <?php echo $price; ?> Ft </b></td>
+                </tr>
+
+                <tr>
+                    <td>Mennyiség</td>
+                    <td>
+                        <input type="number" name="qty" value="<?php echo $qty; ?>">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Státusz</td>
+                    <td>
+                        <select name="status">
+                            <option <?php if($status=="Megrendelve"){echo "selected";} ?> value="Megrendelve">Megrendelve</option>
+                            <option <?php if($status=="Kiszállítás alatt"){echo "selected";} ?> value="Kiszállítás alatt">Kiszállítás alatt</option>
+                            <option <?php if($status=="Kiszállítva"){echo "selected";} ?> value="Kiszállítva">Kiszállítva</option>
+                            <option <?php if($status=="Törölve"){echo "selected";} ?> value="Törölve">Törölve</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
