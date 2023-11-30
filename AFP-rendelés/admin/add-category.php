@@ -25,3 +25,18 @@
 
         <!-- KAtegória hozzáadás kezdete-->
         <form action="" method="POST" enctype="multipart/form-data">
+
+        table class="tbl-30">
+                <tr>
+                    <td>Kategória: </td>
+                    <td>
+                        <input type="text" name="title" placeholder="Kategória neve">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Ikon kiválasztása: </td>
+                    <td>
+                        <input type="file" name="image">
+                    </td>
+                </tr>
