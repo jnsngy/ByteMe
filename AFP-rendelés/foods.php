@@ -14,3 +14,14 @@
     <section class="food-menu">
         <div class="container">
             <h2 class="text-center">Ételek</h2>
+
+            <?php
+
+                // minden aktív étel megjelenítése
+                $sql = "SELECT * FROM tbl_Etel WHERE active='Igen'";
+
+                $res = mysqli_query($conn, $sql);
+
+                $count = mysqli_num_rows($res);
+
+                
