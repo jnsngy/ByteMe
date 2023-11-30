@@ -55,3 +55,31 @@
 
                 //van e elérhető étel 
                 if($count2>0)
+                {
+                    while($row2=mysqli_fetch_assoc($res2))
+                    {
+                        $id = $row2['id'];
+                        $title = $row2['nev'];
+                        $price = $row2['ar'];
+                        $description = $row2['leiras'];
+                        $image_name= $row2['kep_nev'];
+                        ?>
+
+                            <div class="food-menu-box">
+                                <div class="food-menu-img">
+                                <?php 
+                                    // van e kép 
+                                    if($image_name=="")
+                                    {
+                                        echo "<div class'error'>Ikon nem található</div>";
+                                    }
+                                    else
+                                    {
+                                        ?>
+
+                                            <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name;?>" class="img-responsive img-curve">
+
+                                        <?php
+                                    }
+                                ?>
+                                </div>
