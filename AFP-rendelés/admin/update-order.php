@@ -137,4 +137,25 @@
                         rendelo_cim = '$customer_address'
                         WHERE id=$id
                     ";
-                    
+                    $res2 = mysqli_query($conn, $sql2);
+
+                    if($res2==TRUE)
+                    {
+                        $_SESSION['update'] = "<div class=succes>Sikeres frissítés</div>";
+                        header('location:'.SITEURL.'admin/manage-rendeles.php');
+                    }
+                    else
+                    {
+                        $_SESSION['update'] = "<div class=error>Sikertelen frissítés</div>";
+                        header('location:'.SITEURL.'admin/manage-rendeles.php');
+                    }
+                
+                }
+            
+            
+            ?>
+
+    </div>
+</div>
+
+<?php include('partials/footer.php'); ?> 
