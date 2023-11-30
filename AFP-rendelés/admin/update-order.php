@@ -75,3 +75,27 @@
                     </td>
                 </tr>
                 <tr>
+                <td>Megrendelő neve: </td>
+                        <td>
+                            <input type="text" name="customer_name" value="<?php echo $customer_name; ?>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Megrendelő elérhetősége: </td>
+                        <td>
+                            <input type="text" name="customer_contact" value="<?php echo $customer_contact; ?>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Megrendelő email: </td>
+                        <td>
+                            <input type="text" name="customer_email" value="<?php echo $customer_email; ?>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Megrendelő címe: </td>
+                        <td>
+                            <textarea name="customer_address" cols="30" rows="5"><?php echo $customer_addres; ?></textarea>
+                        </td>
+                    </tr>
+                    
