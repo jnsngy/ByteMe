@@ -33,3 +33,24 @@
                 echo $_SESSION['update']; //üzenet kiírása
                 unset($_SESSION['update']); //üzenet eltávolítása
             }
+            if(isset($_SESSION['upload']))
+            {
+                echo $_SESSION['upload']; //üzenet kiírása
+                unset($_SESSION['upload']); //üzenet eltávolítása
+            }
+            if(isset($_SESSION['törlés-sikertelen']))
+            {
+                echo $_SESSION['törlés-sikertelen']; //üzenet kiírása
+                unset($_SESSION['törlés-sikertelen']); //üzenet eltávolítása
+            }
+            
+
+        ?>
+
+        <br><br>
+
+        <!-- Kategória hozzáadása gomb -->
+
+        <a href="<?php echo SITEURL; ?>admin/add-category.php" class="btn-primary">Kategória hozzáadása</a>
+
+        <br /><br /><br />
