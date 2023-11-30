@@ -60,7 +60,7 @@
             <th>Felhasználónév</th>
             <th>Szerkesztés</th>
         </tr>
-        
+
         <?php 
 
             
@@ -68,6 +68,17 @@
                 $sql = "SELECT * FROM tbl_admin";
                 //végrehajtása a kódnak
                 $res = mysqli_query($conn, $sql);
+
+                 //ellenőrzés, hogy végre lett e hajtva
+                 if($res==TRUE)
+                 {
+                     //sorok számolása, hogy van egy adat az adatbázisban
+                     $count = mysqli_num_rows($res); 
+
+                     $sn=1; //változó létrehozása a sorszám kezeléséhez
+
+
+                 }
         
         
         ?>
