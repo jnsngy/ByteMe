@@ -84,6 +84,18 @@ if(isset($_POST['submit']))
      felhasznev = '$felhasznalonev' 
      WHERE id='$id'
      ";
+
+     // sql végrehajtása
+
+     $res = mysqli_query($conn, $sql);
+
+     // ellenőrzés sikerült e vagy nem
+     if($res==TRUE)
+     {
+         // sikeresen végrehajtva és megváltoztatva az adat
+         $_SESSION['update'] = "<div class='succes'>Adatok sikeresen megváltoztatva</div>";
+         header('location:'.SITEURL.'admin/manage-admin.php');
+     }
 }
 
 ?>
