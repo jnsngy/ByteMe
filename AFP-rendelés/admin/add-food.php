@@ -83,6 +83,13 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td>Ikon kiválasztása: </td>
+                    <td>
+                        <input type="file" name="image">
+                    </td>
+                </tr>
+
             </table>
         </form>
     </div>
