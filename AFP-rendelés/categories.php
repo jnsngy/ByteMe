@@ -56,3 +56,19 @@
 
                 <?php
             }
+        }
+        else
+        {
+            echo "<div class='error'>Nincs kategória hozzáadva</div>";
+        }
+
+    ?>
+    
+
+    <div class="clearfix"></div>
+</div>
+</section>
+<!-- kategóriák vége -->
+
+
+<?php include('partials-front/footer.php');?>
