@@ -116,3 +116,21 @@
                 //új kép hozzáadása
                 if(isset($_FILES['image']['name']))
                 {
+                    $image_name = $_FILES['image']['name'];
+
+                    //van-e elérhető kép 
+                    if($image_name != "")
+                    {
+                        // van
+
+                        //új kép feltöltése
+
+                        $ext = end(explode('.',$image_name));
+
+                        //átnevezés
+
+                        $image_name = "uj_kep_".rand(000, 999).'.'.$ext; //uj_kep.jpg
+
+
+                        $source_path = $_FILES['image']['tmp_name'];
+                        $destination_path = "../images/category/".$image_name;
