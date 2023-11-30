@@ -101,3 +101,27 @@
                 </fieldset>
 
             </form>
+
+            <?php 
+
+                                    
+                // submit meglett e nyomva vagy nem
+                if(isset($_POST['submit']))
+                {
+                    //meglett
+                    // adatok megszerzése a form-ból 
+
+                    $food = $_POST['food'];
+                    $price = $_POST['price'];
+                    $qty = $_POST['qty'];
+
+                    $total = $price * $qty; // össz ár mennyiség * ár
+
+                    $order_date = date("Y-m-d h:i:sa"); // rendelés dátum 
+
+                    $status = "Megrendelve"; //megrendelve, kiszállítás alatt, kiszállítva, törölve 
+
+                    $customer_name = $_POST['full-name'];
+                    $customer_contact = $_POST['contact'];
+                    $customer_email = $_POST['email'];
+                    $customer_addres = $_POST['address'];
