@@ -25,3 +25,26 @@
 
             }
         }
+        $sql = "DELETE FROM tbl_kategoriak WHERE id=$id";
+
+        $res = mysqli_query($conn, $sql);
+
+        if($res==TRUE)
+        {
+            $_SESSION['delete'] = "<div class='succes'>Sikeres törlés</div>";
+            header('location:'.SITEURL.'admin/manage-kategoria.php');
+        }
+        else
+        {
+            $_SESSION['delete'] = "<div class='error'>Sikertelen törlés</div>";
+            header('location:'.SITEURL.'admin/manage-kategoria.php');
+        }
+    }
+    else
+    {
+        header('location:'.SITEURL.'admin/manage-kategoria.php');
+
+    }
+
+
+?>
