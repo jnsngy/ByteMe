@@ -36,3 +36,16 @@
     }
 
 ?>
+
+    <!-- fOOD sEARCH Section Starts Here -->
+    <section class="food-search">
+        <div class="container">
+            
+            <h2 class="text-center text-white">A megrendeléshez töltse ki az alábbi űrlapot!</h2>
+
+            <form action="" method="POST" class="order">
+                <fieldset>
+                    <legend class="inline">Kiválasztott étel</legend>
+
+                    <div class="food-menu-img">
+                        
