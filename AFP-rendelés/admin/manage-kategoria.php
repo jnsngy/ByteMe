@@ -52,3 +52,31 @@
         <!-- Kategória hozzáadása gomb -->
 
         <a href="<?php echo SITEURL; ?>admin/add-category.php" class="btn-primary">Kategória hozzáadása</a>
+        <br /><br /><br />
+
+<table class="tbl-full">
+    <tr>
+        <th>ID</th>
+        <th>Név</th>
+        <th>Ikon</th>
+        <th>Top termék</th>
+        <th>Van-e készleten</th>
+        <th>Szerkesztés</th>
+    </tr>
+
+    <?php
+        // kategóriák megjelenítése
+        $sql = "SELECT * FROM tbl_kategoriak";
+        //végrehajtása a kódnak
+        $res = mysqli_query($conn, $sql);
+
+        $count = mysqli_num_rows($res); 
+
+        $sn=1; //változó létrehozása a sorszám kezeléséhez
+
+        if($count>0)
+        {
+            //van adat
+            while($rows=mysqli_fetch_assoc($res))
+                {
+                    //adatok kinyerése az adatbázisból while ciklussal
