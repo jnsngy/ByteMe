@@ -84,3 +84,12 @@
      <section class="food-menu">
         <div class="container">
             <h2 class="text-center">Ételek</h2>
+
+            <?php
+
+                // ételek adatbázisból történő megjelenítése ha az aktív és top
+                $sql2 = "SELECT * FROM tbl_etel WHERE active='Igen' AND jelleg='Igen' LIMIT 6";
+
+                $res2 = mysqli_query($conn, $sql2);
+
+                $count2 = mysqli_num_rows($res2);
