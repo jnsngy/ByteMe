@@ -54,3 +54,12 @@
                         <input type="radio" name="active" value="Nem"> Nem
                     </td>
                 </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="submit" value="Kategória hozzáadása" class="btn-secondary">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+        <!-- Kategória hozzáadás vége-->
