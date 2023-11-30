@@ -147,3 +147,14 @@
                 }
                 
                 //sql
+                $sql = "INSERT INTO tbl_kategoriak SET
+                    nev = '$title',
+                    kep_neve = '$image_name',
+                    jelleg = '$featured',
+                    van_e = '$active'
+                ";
+
+                // sql futtatása és mentés
+                $res = mysqli_query($conn, $sql);
+
+                //lefutott e vagy nem
