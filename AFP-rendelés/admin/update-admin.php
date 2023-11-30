@@ -38,7 +38,7 @@
             }
 
      ?>   
-      <form action="" method="POST">
+     <form action="" method="POST">
 
         <table class="tbl-30">
             <tr>
@@ -48,11 +48,18 @@
                 </td>
             </tr>
 
-        
+            <tr>
+                <td>Felhasználónév: </td>
+                <td>
+                    <input type="text" name="felhasznev" value="<?php echo $felhasznalonev; ?>">
+                </td>
+            </tr>
+
+            
 
         </table>
 
-</form>
+    </form>
 
 
 
