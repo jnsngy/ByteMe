@@ -26,3 +26,20 @@
     }
 
 ?>
+
+<!-- keresés rész kezdődik -->
+<section class="food-search text-center">
+        <div class="container">
+            
+            <h2>Ételek a keresés alapján: <a href="#" class="text-white">"<?php echo $category_title?>"</a></h2>
+
+        </div>
+    </section>
+    <!-- keresés rész vége -->
+
+
+
+    <!-- menü kezdete -->
+    <section class="food-menu">
+        <div class="container">
+            <h2 class="text-center">Ételek</h2>
