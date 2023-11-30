@@ -61,3 +61,18 @@
                     </td>
                 </tr>
             </table>
+            </form>
+        <!-- Kategória hozzáadás vége-->
+
+        <?php
+            //az értéket az adatbázisba mentjük
+            //submit gomb meglett-e nyomva vagy nem
+
+            if(isset($_POST['submit']))
+            {
+                //adat fogadása a formból
+                $title = $_POST['title'];
+
+                //radio kilett-e választva vagy nem
+
+                if(isset($_POST['featured']))
