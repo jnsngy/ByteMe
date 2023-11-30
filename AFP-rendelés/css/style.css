@@ -27,3 +27,23 @@
 .text-white{
     color: white;
 }
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #ffa502;
+    text-decoration: none;
+}
+a:hover{
+    color: #ffa502;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
