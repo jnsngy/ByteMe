@@ -74,3 +74,24 @@
                 // az új jelszavak egyeznek-e 
                 if($uj_jelszo==$jelszo_megerosit)
                 {
+                    //jelszó frissítése a db-ben
+                    $sql2 = "UPDATE tbl_admin SET
+                        jelszo='$uj_jelszo'
+                        WHERE id=$id
+                    ";
+
+                    $res2 = mysqli_query($conn, $sql2);
+
+                    if($res2==TRUE)
+                    {
+                        //sikeres
+                        $_SESSION['change-pwd'] = "<div class='succes'>A jelszó sikeresen megváltozott. </div>";
+                        header('location:'.SITEURL.'admin/manage-admin.php');
+                    }
+                    else
+                    {
+                        //sikertelen
+                        $_SESSION['change-pwd'] = "<div class='error'>A jelszó megváltoztatása nem sikerült. </div>";
+                        header('location:'.SITEURL.'admin/manage-admin.php');
+                    }
+                }
