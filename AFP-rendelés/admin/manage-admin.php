@@ -88,6 +88,17 @@
                             $teljes_nev=$rows['teljes_nev'];
                             $felhasznev=($rows['felhasznev']);
                             ?>
+                             <tr>
+                                    <td><?php echo $sn++; ?></td>
+                                    <td><?php echo $teljes_nev; ?></td>
+                                    <td><?php echo $felhasznev; ?></td>
+                                    <td>
+                                        <a href="<?php echo SITEURL; ?>admin/update-password.php?id=<?php echo $id;?>" class="btn-primary">Jelszó változtatás</a>
+                                        <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id;?>" class="btn-secondary">Szerkesztés</a>
+                                        <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id;?>" class="btn-danger">Törlés</a>
+                                    </td>
+                                </tr>
+                            <?php
                         }
                     }
                  }
