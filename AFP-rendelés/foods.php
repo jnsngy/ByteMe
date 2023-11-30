@@ -35,5 +35,5 @@
                         $price = $row['ar'];
                         $image_name = $row['kep_nev'];
                         ?>
-
+                            <div class="food-menu-box">
                 
