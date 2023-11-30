@@ -94,3 +94,20 @@
                     $active = $_POST['active'];
                 }
                 else
+                {
+                    //alap érték beállítása
+
+                    $active = 'Nem';
+                }
+
+                //fájl feltöltése
+                
+                if(isset($_FILES['image']['name']))
+                {
+                    //kép feltöltése
+
+                    //feltöltéshez kell a cél mappa és az cél mappa
+                    $image_name = $_FILES['image']['name'];
+
+                    if($image_name != "")
+                    {
