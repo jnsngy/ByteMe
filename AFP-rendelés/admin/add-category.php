@@ -139,3 +139,11 @@
                         }
 
                     }
+                }
+                else
+                {
+                    //nem töltjük fel a képet és az értéket üresre állítjuk
+                    $image_name="";
+                }
+                
+                //sql
