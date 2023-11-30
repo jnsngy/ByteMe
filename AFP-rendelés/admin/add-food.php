@@ -22,6 +22,13 @@
                     <input type="text" name="title" placeholder="Étel neve">
                     </td>
                 </tr>
+
+                <tr>
+                    <td>Leírás: </td>
+                    <td>
+                        <textarea name="description" cols="30" rows="5" placeholder="Az étel leírása"></textarea>
+                    </td>
+                </tr>
             </table>
         </form>
     </div>
