@@ -30,6 +30,11 @@
                  $felhasznalonev = $row['felhasznev'];
 
              }
+             else
+                {
+                    // nincs meg az adott sorszámú admin
+                    header('location:'.SITEURL.'admin/manage-admin.php');
+                }
         }
      
      
