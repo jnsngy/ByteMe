@@ -70,32 +70,41 @@
 
 </div>
 <?php 
-if(isset($_POST['submit']))
-{
-    // adatok kinyerése a formból és változtatás
-    $id = $_POST['id'];
-    $teljes_nev = $_POST['teljes_nev'];
-    $felhasznalonev = $_POST['felhasznev'];
+    if(isset($_POST['submit']))
+    {
+        // adatok kinyerése a formból és változtatás
+        $id = $_POST['id'];
+        $teljes_nev = $_POST['teljes_nev'];
+        $felhasznalonev = $_POST['felhasznev'];
 
-     // sql a cseréhez
+        // sql a cseréhez
 
-     $sql = "UPDATE tbl_admin SET
-     teljes_nev = '$teljes_nev',
-     felhasznev = '$felhasznalonev' 
-     WHERE id='$id'
-     ";
+        $sql = "UPDATE tbl_admin SET
+        teljes_nev = '$teljes_nev',
+        felhasznev = '$felhasznalonev' 
+        WHERE id='$id'
+        ";
 
-     // sql végrehajtása
+        // sql végrehajtása
 
-     $res = mysqli_query($conn, $sql);
+        $res = mysqli_query($conn, $sql);
 
-     // ellenőrzés sikerült e vagy nem
-     if($res==TRUE)
-     {
-         // sikeresen végrehajtva és megváltoztatva az adat
-         $_SESSION['update'] = "<div class='succes'>Adatok sikeresen megváltoztatva</div>";
-         header('location:'.SITEURL.'admin/manage-admin.php');
-     }
-}
+        // ellenőrzés sikerült e vagy nem
+        if($res==TRUE)
+        {
+            // sikeresen végrehajtva és megváltoztatva az adat
+            $_SESSION['update'] = "<div class='succes'>Adatok sikeresen megváltoztatva</div>";
+            header('location:'.SITEURL.'admin/manage-admin.php');
+        }
+        else
+        {
+            //nem sikerült
+            $_SESSION['update'] = "<div class='error'>Adatok változtatása nem sikerült</div>";
+            header('location:'.SITEURL.'admin/manage-admin.php');
+        }
+    }
 
 ?>
+
+
+<?php include('partials/footer.php'); ?>
