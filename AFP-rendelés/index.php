@@ -22,4 +22,16 @@
             unset($_SESSION['order']); //üzenet eltávolítása
         }
     ?>
-    
+   
+    <!-- kategóriák kezdete -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="text-center">Ételek felfedezése</h2>
+
+            <?php
+                //sql az adatok megjelenítéséhez
+                $sql = "SELECT * FROM tbl_kategoriak WHERE van_e='Igen' AND jelleg='Igen' LIMIT 3";
+                // kód futtatása
+                $res = mysqli_query($conn, $sql);
+                // sorok számolása hogy van e kategória
+                $count = mysqli_num_rows($res);
