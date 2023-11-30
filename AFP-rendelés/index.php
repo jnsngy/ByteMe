@@ -131,4 +131,18 @@
                                 <?php echo $description; ?>
                                 </p>
                                 <br>
-                                
+
+                                <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Megrendelés</a>
+                            </div>
+                        </div>
+
+                        <?php
+                        
+                    }
+                }
+                else
+                {
+                    echo "<div class='error'>Étel nem található</div>";
+                }
+
+            ?>
