@@ -125,3 +125,17 @@
                     $customer_contact = $_POST['contact'];
                     $customer_email = $_POST['email'];
                     $customer_addres = $_POST['address'];
+
+                    $sql2 = "INSERT INTO tbl_megrendeles SET
+                        etel = '$food',
+                        ar = $price,
+                        mennyiseg = '$qty',
+                        teljes = $total,
+                        rendeles_datum = '$order_date',
+                        statusz = '$status',
+                        rendelo_nev = '$customer_name',
+                        rendelo_elerhetoseg = '$customer_contact',
+                        rendelo_email = '$customer_email',
+                        rendelo_cim = '$customer_addres'
+                    ";
+                    
