@@ -47,3 +47,26 @@
 
                         <a href="<?php echo SITEURL; ?>category-foods.php?category_id=<?php echo $id; ?>">
                             <div class="box-3 float-container">
+                            <?php 
+                                    if($image_name=="")
+                                    {
+                                        // nincs ikon
+                                        echo "<div class='error'>Ikon nem elérhető</div>";
+                                    }
+                                    else
+                                    {
+                                        // van ikon
+                                        ?>
+                                            <img src="<?php echo SITEURL; ?>images/category/<?php echo $image_name;?>" class="img-responsive img-curve">
+                                        <?php
+                                    }
+                                ?>
+
+                                <h3 class="float-text text-white"><?php echo $title;?></h3>
+                            </div>
+                        </a>
+
+                        <?php
+                    }
+                }
+                
