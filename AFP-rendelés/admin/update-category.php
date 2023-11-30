@@ -66,3 +66,34 @@
                         ?>
                     </td>
                 </tr>
+                <tr>
+                    <td>Új ikon: </td>
+                    <td>
+                        <input type="file" name="image" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Top termék: </td>
+                    <td>
+                        <input <?php if($featured=="Igen"){echo "checked";} ?> type="radio" name="featured" value="Igen"> Igen
+
+                        <input <?php if($featured=="Nem"){echo "checked";} ?> type="radio" name="featured" value="Nem"> Nem
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Van-e készleten: </td>
+                    <td>
+                        <input <?php if($active=="Igen"){echo "checked";} ?> type="radio" name="active" value="Igen"> Igen
+                        <input <?php if($active=="Nem"){echo "checked";} ?> type="radio" name="active" value="Nem"> Nem
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="hidden" name="current_image" value="<?php echo $current_image; ?>">
+                        <input type="hidden" name="id" value="<?php echo $id; ?>">
+                        <input type="submit" name="submit" value="Kategória frissítése" class="btn-secondary">
+                    </td>
+                </tr>
