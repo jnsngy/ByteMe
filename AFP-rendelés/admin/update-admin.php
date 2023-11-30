@@ -76,6 +76,14 @@ if(isset($_POST['submit']))
     $id = $_POST['id'];
     $teljes_nev = $_POST['teljes_nev'];
     $felhasznalonev = $_POST['felhasznev'];
+
+     // sql a cseréhez
+
+     $sql = "UPDATE tbl_admin SET
+     teljes_nev = '$teljes_nev',
+     felhasznev = '$felhasznalonev' 
+     WHERE id='$id'
+     ";
 }
 
 ?>
