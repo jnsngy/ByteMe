@@ -176,6 +176,27 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td>Kategória: </td>
+                    <td>
+                        <select name="category">
+
+                        <?php
+                            //kategóriák megszerezése ami aktív
+                            $sql = "SELECT * FROM tbl_kategoriak WHERE van_e='Igen'";
+
+                            $res = mysqli_query($conn, $sql);
+
+                            $count = mysqli_num_rows($res);
+
+                            
+
+                        ?>
+
+                        </select>
+                    </td>
+                </tr>
+
             </table>
 
         </form>
