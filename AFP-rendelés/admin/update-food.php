@@ -107,6 +107,14 @@
 
                 $row2 = mysqli_fetch_assoc($res2);
 
+                $title = $row2['nev'];
+                $description = $row2['leiras'];
+                $price = $row2['ar'];
+                $current_image = $row2['kep_nev'];
+                $current_category = $row2['kategoria_id'];
+                $featured = $row2['jelleg'];
+                $active = $row2['active'];
+
             }
 
 
