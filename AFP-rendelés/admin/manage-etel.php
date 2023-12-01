@@ -114,6 +114,14 @@
                             <?php 
                         }
                 }
+                else
+                {
+                    //nincs adat
+                    // html hozzáadása php-ban
+                    echo "<tr> <td colspan='7' class='error'>Nem lett hozzáadva étel.</td> </tr>";
+                    
+                }
+                
                 ?>
         </table>            
     </div>
