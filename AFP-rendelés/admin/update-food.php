@@ -148,6 +148,27 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td>Jelenlegi ikon: </td>
+                    <td>
+                        <?php
+                            if($current_image == "")
+                            {
+                                // nincs kép
+                                echo "<div class='error'>Nincs elérhető ikon</div>";
+                            }
+                            else
+                            {
+                                // van kép
+                                ?>
+                                    <img src="<?php echo SITEURL; ?>images/food/<?php echo $current_image; ?>" width="100px">
+                                <?php
+                            }
+
+                        ?>
+                    </td>
+                </tr>
+
             </table>
 
         </form>
