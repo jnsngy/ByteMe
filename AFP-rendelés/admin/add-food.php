@@ -116,7 +116,32 @@
         </form>
 
         <?php
-        
+            if(isset($_POST['submit']))
+            {
+               //kaja hozzáadása, van e fotó kiválasztva, értékek párosítása
+               $title = $_POST['title'];
+               $description = $_POST['description'];
+               $price = $_POST['price'];
+               $category = $_POST['category'];
+
+               if(isset($_POST['featured']))
+               {
+                   $featured = $_POST['featured'];
+               }
+               else
+               {
+                   $featured = "Nem";
+               }
+
+               
+
+               
+               
+
+               
+
+               
+            }
         ?>
     </div>
 </div>
