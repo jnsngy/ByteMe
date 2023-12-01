@@ -86,23 +86,29 @@
                                 <td><?php echo $description ?></td>
                                 <td><?php echo $price; ?></td>
                                 <td>
-                                        <?php 
-                                        //van e kép vagy nincs
-                                            if($image_name!="")
-                                            {
-                                                //kép megjelenítése
-                                                ?>
-                                                <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name;?>" width="50px">
+                                    <?php 
+                                    //van e kép vagy nincs
+                                        if($image_name!="")
+                                        {
+                                            //kép megjelenítése
+                                            ?>
+                                            <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name;?>" width="50px">
 
-                                                <?php
-                                            }
-                                            else
-                                            {
-                                                //nincs kép
-                                                echo "<div class='error'><Nem lett hozzáadva kép</div>";
-                                            }
-                                         ?>
-                                    </td>
+                                            <?php
+                                        }
+                                        else
+                                        {
+                                            //nincs kép
+                                            echo "<div class='error'><Nem lett hozzáadva kép</div>";
+                                        }
+                                    ?>
+                                </td>
+                                <td><?php echo $featured; ?></td>
+                                <td><?php echo $active; ?></td>
+                                <td>
+                                    <a href="<?php echo SITEURL; ?>admin/update-food.php?id=<?php echo $id;?>" class="btn-secondary">Szerkesztés</a>
+                                    <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id;?>&kep_neve=<?php echo $image_name;?>" class="btn-danger">Törlés</a>
+                                </td>
                             </tr>
                             
                             <?php 
