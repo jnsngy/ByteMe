@@ -54,6 +54,18 @@
                 <th>Van-e készleten</th>
                 <th>Szerkesztés</th>
             </tr>
+
+            <?php
+
+                $sql = "SELECT * FROM tbl_etel";
+
+                $res = mysqli_query($conn, $sql);
+
+                $count = mysqli_num_rows($res); 
+
+                $sn=1; //változó létrehozása a sorszám kezeléséhez
+                
+            ?>
         </table>
             
         </div>
