@@ -28,6 +28,23 @@
                 $dest_path = "../images/food/".$image_name;
 
                 $upload = move_uploaded_file($src_path, $dest_path);
+
+                if($upload==FALSE)
+                {
+                    $_SESSION['upload'] = "<div class='error'>Sikertelen képfeltöltés</div>";
+                    header('location:'.SITEURL.'admin/manage-etel.php');
+                    die();
+                }
+
+                if($current_image!="")
+                {
+                    // van jelenlegi ikon
+                    $remove_path = "../images/food/".$current_image;
+
+                    $remove = unlink($remove_path);
+
+
+                }
             }
             else
             {
