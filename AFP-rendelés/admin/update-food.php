@@ -221,6 +221,14 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td>Van-e készleten: </td>
+                    <td>
+                        <input <?php if($active=='Igen') {echo "checked";} ?> type="radio" name="active" value="Igen"> Igen
+                        <input <?php if($active=='Nem') {echo "checked";} ?> type="radio" name="active" value="Nem"> Nem
+                    </td>
+                </tr>
+
             </table>
 
         </form>
