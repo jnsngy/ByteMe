@@ -116,7 +116,10 @@
                 $active = $row2['active'];
 
             }
-
+            else
+            {
+                header('location:'.SITEURL.'admin/manage-etel.php');
+            }
 
         ?>
 
