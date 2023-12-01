@@ -34,8 +34,17 @@
             $_SESSION['delete'] = "<div class='succes'>Sikeres törlés</div>";
             header('location:'.SITEURL.'admin/manage-etel.php');
         }
+        else
+        {
+            $_SESSION['delete'] = "<div class='error'>Sikertelen törlés</div>";
+            header('location:'.SITEURL.'admin/manage-etel.php');
+        }
     }
+    else
+    {
+        header('location:'.SITEURL.'admin/manage-etel.php');
 
+    }
 
 
 ?>
