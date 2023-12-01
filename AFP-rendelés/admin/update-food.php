@@ -90,3 +90,27 @@
         }
     }
 ?>
+
+<div class="main-content">
+    <div class="wrapper">
+        <h1>Étel frissítése</h1>
+        <br><br>
+
+        <?php 
+            if(isset($_GET['id']))
+            {
+                $id = $_GET['id'];
+
+                $sql2 = "SELECT * FROM tbl_etel WHERE id=$id";
+
+                $res2 = mysqli_query($conn, $sql2);
+
+                $row2 = mysqli_fetch_assoc($res2);
+
+            }
+
+
+        ?>
+
+    </div>
+</div>
