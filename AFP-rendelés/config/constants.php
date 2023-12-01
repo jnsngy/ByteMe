@@ -5,7 +5,7 @@
 
 
     //konstansok készítése az ismétlés elkerülése végett
-    define('SITEURL', 'http://localhost:8080/kajarendeles/'); //itt érhető el az oldal
+    define('SITEURL', 'http://localhost:8080/AFP-rendelés/'); //itt érhető el az oldal
     define('LOCALHOST', 'localhost');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', '');
