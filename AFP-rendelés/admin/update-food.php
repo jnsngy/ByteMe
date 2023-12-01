@@ -134,6 +134,13 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td>Leírás: </td>
+                    <td>
+                        <textarea name="description" cols="30" rows="5"><?php echo $description; ?></textarea>
+                    </td>
+                </tr>
+
             </table>
 
         </form>
