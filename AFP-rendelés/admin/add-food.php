@@ -174,34 +174,41 @@
                             die();
                         }
 
-                        else
-                        {
-                            $image_name = "";
-                        }
-
-                        // számoknak nem kell aposztróf mert egy értéknek számít, nem string
-                        $sql2 = "INSERT INTO tbl_etel SET
-                                nev = '$title',
-                                leiras = '$description',
-                                ar = $price,
-                                kep_nev = '$image_name',
-                                kategoria_id = '$category',
-                                jelleg = '$featured',
-                                active = '$active'
-                        ";
-
-                        $res2 = mysqli_query($conn, $sql2);
-
                         
                     }
                 }
+                else
+                {
+                    $image_name = "";
+                }
 
-               
-               
+                // számoknak nem kell aposztróf mert egy értéknek számít, nem string
+                $sql2 = "INSERT INTO tbl_etel SET
+                        nev = '$title',
+                        leiras = '$description',
+                        ar = $price,
+                        kep_nev = '$image_name',
+                        kategoria_id = '$category',
+                        jelleg = '$featured',
+                        active = '$active'
+                ";
 
-               
+                $res2 = mysqli_query($conn, $sql2);
 
-               
+                if($res2==TRUE)
+                {
+                    //sikeres
+                    $_SESSION['add'] = "<div class='succes'>Étel sikeresen hozzáadva</div>";
+                    //elnavigálás az étel hozzáadás fülre
+                    header("location:".SITEURL.'admin/manage-etel.php');
+                }
+                else
+                {
+                    //nem sikerült
+                    $_SESSION['add'] = "<div class='error'>Étel hozzáadása nem sikerült</div>";
+                    //elnavigálás az étel hozzáadás fülre
+                    header("location:".SITEURL.'admin/add-food.php');
+                } 
             }
         ?>
     </div>
