@@ -80,7 +80,13 @@
                             $featured=$rows['jelleg'];
                             $active=$rows['active'];
                             ?>
-                            
+                            <tr>
+                                <td><?php echo $sn++; ?></td>
+                                <td><?php echo $title; ?></td>
+                                <td><?php echo $description ?></td>
+                                <td><?php echo $price; ?></td>
+                                
+                            </tr>
                             
                             <?php 
                         }
