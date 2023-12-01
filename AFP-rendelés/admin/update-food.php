@@ -63,5 +63,17 @@
         {
             $image_name = $current_image;
         }
+
+        $sql3 = "UPDATE tbl_etel SET
+            nev = '$title',
+            leiras = '$description',
+            ar = $price,
+            kep_nev = '$image_name',
+            kategoria_id = '$category',
+            jelleg = '$featured',
+            active = '$active'
+            WHERE id=$id
+
+        ";
     }
 ?>
