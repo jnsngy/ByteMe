@@ -141,6 +141,13 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td>Ár: </td>
+                    <td>
+                        <input type="number" name="price" value="<?php echo $price; ?>">
+                    </td>
+                </tr>
+
             </table>
 
         </form>
