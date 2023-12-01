@@ -40,6 +40,21 @@
         <!-- Étel hozzáadása gomb -->
 
         <a href="<?php echo SITEURL; ?>admin/add-food.php" class="btn-primary">Étel hozzáadása</a>
+
+        <br /><br /><br />
+
+        <table class="tbl-full">
+            <tr>
+                <th>ID</th>
+                <th>Név</th>
+                <th>Leírás</th>
+                <th>Ár</th>
+                <th>Ikon</th>
+                <th>Top termék</th>
+                <th>Van-e készleten</th>
+                <th>Szerkesztés</th>
+            </tr>
+        </table>
             
         </div>
     </div>
