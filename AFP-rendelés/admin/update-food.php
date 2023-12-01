@@ -169,6 +169,13 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td>Új ikon: </td>
+                    <td>
+                        <input type="file" name="image">
+                    </td>
+                </tr>
+
             </table>
 
         </form>
