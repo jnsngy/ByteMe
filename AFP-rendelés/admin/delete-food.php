@@ -24,6 +24,16 @@
 
             }
         }
+
+        $sql = "DELETE FROM tbl_etel WHERE id=$id";
+
+        $res = mysqli_query($conn, $sql);
+
+        if($res==TRUE)
+        {
+            $_SESSION['delete'] = "<div class='succes'>Sikeres törlés</div>";
+            header('location:'.SITEURL.'admin/manage-etel.php');
+        }
     }
 
 
