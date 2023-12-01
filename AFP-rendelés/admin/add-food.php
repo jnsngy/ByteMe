@@ -133,7 +133,14 @@
                    $featured = "Nem";
                }
 
-               
+               if(isset($_POST['active']))
+               {
+                   $active = $_POST['active'];
+               }
+               else
+               {
+                   $active = "Nem";
+               }
 
                
                
