@@ -75,5 +75,18 @@
             WHERE id=$id
 
         ";
+
+        $res3 = mysqli_query($conn, $sql3);
+
+        if($res3==TRUE)
+        {
+            $_SESSION['update'] = "<div class='succes'>Sikeres frissítés</div>";
+            header('location:'.SITEURL.'admin/manage-etel.php');
+        }
+        else
+        {
+            $_SESSION['update'] = "<div class='error'>Sikertelen frissítés</div>";
+            header('location:'.SITEURL.'admin/manage-etel.php');
+        }
     }
 ?>
