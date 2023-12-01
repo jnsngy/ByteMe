@@ -174,7 +174,25 @@
                             die();
                         }
 
+                        else
+                        {
+                            $image_name = "";
+                        }
 
+                        // számoknak nem kell aposztróf mert egy értéknek számít, nem string
+                        $sql2 = "INSERT INTO tbl_etel SET
+                                nev = '$title',
+                                leiras = '$description',
+                                ar = $price,
+                                kep_nev = '$image_name',
+                                kategoria_id = '$category',
+                                jelleg = '$featured',
+                                active = '$active'
+                        ";
+
+                        $res2 = mysqli_query($conn, $sql2);
+
+                        
                     }
                 }
 
