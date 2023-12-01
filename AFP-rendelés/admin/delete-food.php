@@ -7,7 +7,23 @@
         $id=$_GET['id'];
         $kep_neve=$_GET['kep_neve'];
 
-        
+        //kép fájl törlése ha van
+        if($kep_neve != "")
+        {
+            $path = "../images/food/".$kep_neve;
+
+            $remove = unlink($path);
+            
+            //ha sikertelen a törlés akkor hibaüzenet és folyamat megszakítása
+            if($remove==FALSE)
+            {
+                $_SESSION['upload'] = "<div class='error'>Sikertelen törlés</div>";
+                header('location:'.SITEURL.'admin/manage-etel.php');
+
+                die();
+
+            }
+        }
     }
 
 
