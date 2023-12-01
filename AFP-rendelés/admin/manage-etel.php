@@ -85,7 +85,24 @@
                                 <td><?php echo $title; ?></td>
                                 <td><?php echo $description ?></td>
                                 <td><?php echo $price; ?></td>
-                                
+                                <td>
+                                        <?php 
+                                        //van e kép vagy nincs
+                                            if($image_name!="")
+                                            {
+                                                //kép megjelenítése
+                                                ?>
+                                                <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name;?>" width="50px">
+
+                                                <?php
+                                            }
+                                            else
+                                            {
+                                                //nincs kép
+                                                echo "<div class='error'><Nem lett hozzáadva kép</div>";
+                                            }
+                                         ?>
+                                    </td>
                             </tr>
                             
                             <?php 
