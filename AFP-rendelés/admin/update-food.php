@@ -43,7 +43,15 @@
 
                     $remove = unlink($remove_path);
 
+                    //törölve lett e vagy nem
 
+                    if($remove==FALSE)
+                    {
+                        // nem sikerült
+                        $_SESSION['remove-failed'] = "<div class='error'>Sikertelen törlés</div>";
+                        header('location:'.SITEURL.'admin/manage-etel.php');
+                        die();
+                    }
                 }
             }
             else
