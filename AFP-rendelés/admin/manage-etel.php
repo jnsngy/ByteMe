@@ -65,10 +65,29 @@
 
                 $sn=1; //változó létrehozása a sorszám kezeléséhez
                 
-            ?>
-        </table>
-            
-        </div>
+                if($count>0)
+                {
+                    //van adat
+                    while($rows=mysqli_fetch_assoc($res))
+                        {
+                            //adatok kinyerése az adatbázisból while ciklussal
+
+                            $id=$rows['id'];
+                            $title=$rows['nev'];
+                            $description=$rows['leiras'];
+                            $price=$rows['ar'];
+                            $image_name=$rows['kep_nev'];
+                            $featured=$rows['jelleg'];
+                            $active=$rows['active'];
+                            ?>
+                            
+                            
+                            <?php 
+                        }
+                }
+                ?>
+        </table>            
     </div>
+</div>
 
 <?php include('partials/footer.php'); ?> 
