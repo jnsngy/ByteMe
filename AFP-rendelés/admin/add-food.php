@@ -142,6 +142,42 @@
                    $active = "Nem";
                }
 
+               if(isset($_FILES['image']['name']))
+                {
+                    $image_name = $_FILES['image']['name'];
+
+                    if($image_name != "")
+                    {
+                        $ext = end(explode('.', $image_name));
+
+                        //új kép név
+                        $image_name = "uj_kaja".rand(0000,9999).".".$ext;
+
+                        //kép eredeti helye
+                        $src = $_FILES['image']['tmp_name'];
+
+                        //kép cél helye
+                        $dst = "../images/food/".$image_name;
+
+                        //kép feltöltése
+
+                        $upload = move_uploaded_file($src, $dst);
+
+                        //kép fel lett e töltve
+
+                        if($upload==FALSE)
+                        {
+                            //nem sikerült
+                            //átirányítás a hozzáadás oldalra
+                            $_SESSION['upload'] = "<div class='error'>Képfeltöltés sikertelen</div>";
+                            header("location:".SITEURL.'admin/add-food.php');
+                            die();
+                        }
+
+
+                    }
+                }
+
                
                
 
