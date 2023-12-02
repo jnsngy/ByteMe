@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body>
+    <div class="kezdolap">
+        <a href="<?php echo SITEURL; ?>">Kezdőlap</a>
+    </div>
     <div class="login">
         <h1 class="text-center">Bejelentkezés</h1> <br><br>
 

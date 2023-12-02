@@ -134,3 +134,25 @@ table tr td{
     padding: 2%;
 }
 
+.kezdolap {
+    margin: 3% auto;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 10%;
+    background-color: orange;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 30px;
+    font-weight: bold;
+
+}
+
+.kezdolap a{
+    text-decoration: none;
+    color: black;
+    transition-duration: .3s;
+}
+
+.kezdolap a:hover{
+    color: grey;
+}
