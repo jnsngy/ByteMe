@@ -1,4 +1,4 @@
-<?php include('partial/menu.php'); ?>
+<?php include('partials/menu.php'); ?>
 
 //Fő téma
 
