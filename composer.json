@@ -1,10 +1,10 @@
 {
-    "name": "your-vendor-name/your-project-name",
-    "description": "Description of your project",
+    "name": "AFP-projekt",
+    "description": "Food order website",
     "type": "project",
     "require": {
-        "php": "^7.4",
-        // Add your dependencies here
+        "php": "^8.2.4",
+        ű
     },
     "autoload": {
         "psr-4": {
@@ -18,7 +18,7 @@
     },
     "scripts": {
         "test": "phpunit"
-        // Add other scripts or commands here
+        
     },
     "config": {
         "platform": {
