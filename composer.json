@@ -1,0 +1,30 @@
+{
+    "name": "your-vendor-name/your-project-name",
+    "description": "Description of your project",
+    "type": "project",
+    "require": {
+        "php": "^7.4",
+        // Add your dependencies here
+    },
+    "autoload": {
+        "psr-4": {
+            "YourNamespace\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YourNamespace\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+        // Add other scripts or commands here
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.3"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
