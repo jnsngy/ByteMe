@@ -1,0 +1,61 @@
+Ételrendelő Oldal Tesztelési Terve
+1. Tesztterv Elkészítése:
+1.1. Az üzleti követelmények és rendszer specifikációk áttekintése.
+
+1.2. A tesztkörnyezet és -infrastruktúra felállítása.
+
+1.3. A tesztelési csapat kijelölése és feladatok meghatározása.
+
+2. Tesztesetek Tervezése:
+2.1. Felhasználói Regisztráció:
+
+Ellenőrzés, hogy a regisztrációs űrlap megfelelően működik-e.
+Bejelentkezés utáni felhasználói adatok helyességének ellenőrzése.
+2.2. Étterem és Étlap Kezelése:
+
+Az étterem és étlap hozzáadásának, szerkesztésének és törlésének tesztelése.
+2.3. Online Ételrendelés és Fizetés:
+
+Étel kiválasztása és a kosárba helyezése.
+Kifizetési folyamat tesztelése.
+2.4. Kiszállítás és Rendelési Státuszok:
+
+Kiszállítási idők és költségek helyes kezelésének ellenőrzése.
+Rendelési státuszok frissítésének tesztelése.
+2.5. Felhasználói Visszajelzések és Értékelések:
+
+Visszajelzés írása és értékelés adása.
+3. Felkészülés a Végrehajtásra:
+3.1. A tesztelési környezet beállításának ellenőrzése és szükség esetén frissítése.
+
+3.2. Teszteszközök és szoftverek telepítése.
+
+3.3. A tesztesetek végrehajtásához szükséges adatok előkészítése.
+
+4. Tesztek Végrehajtása:
+4.1. Az egyes tesztesetek végrehajtása a tesztkörnyezetben.
+
+4.2. Hibaüzenetek és problémák dokumentálása.
+
+4.3. Tesztadatok naprakész tartásának biztosítása.
+
+5. Kilépési Feltételek Vizsgálata:
+5.1. Az összes tervezett teszteset lefuttatása.
+
+5.2. A tesztelési környezet állapotának ellenőrzése.
+
+5.3. A tesztelési célok elérésének ellenőrzése.
+
+6. Eredmények Értékelése:
+6.1. Helyes működésű tesztesetek rögzítése.
+
+6.2. Hibák és problémák dokumentálása.
+
+6.3. Prioritások és súlyosság értékelése.
+
+7. Jelentés Készítés:
+7.1. Tesztelési összefoglaló készítése.
+
+7.2. Hibajelentések elkészítése részletes leírással és reprodukálhatósággal.
+
+7.3. Tesztelt funkcionalitások listája és azok állapota.
