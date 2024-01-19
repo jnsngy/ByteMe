@@ -1,0 +1,34 @@
+Követelmény Specifikáció - Ételrendelő Oldal
+1. Jelenlegi Helyzet Leírása:
+Az ételmegrendelő oldal jelenleg nem létezik, és az ételrendelés folyamata hagyományos módon, telefonon vagy személyesen történik. Az éttermek és ügyfelek közötti kapcsolat hiányos, és nincs egységes platform az ételrendelésre és kiszállításra.
+
+2. Vágyálom Rendszer Leírása:
+Az általunk tervezett rendszer egy online ételmegrendelő platform, amely lehetővé teszi az ügyfelek számára az ételrendelést, az éttermek számára pedig a könnyű és hatékony kiszállítást. A rendszer intuitív, könnyen kezelhető felülettel rendelkezik mind az ügyfelek, mind az éttermek számára.
+
+3. Pályázatok, Törvények, Rendeletek, Szabványok és Ajánlások:
+A rendszer kialakításakor figyelembe vesszük a helyi és nemzetközi adatvédelmi törvényeket, az online fizetésekre vonatkozó szabályozásokat, valamint az ételbiztonsági és higiéniai előírásokat. A rendszer fejlesztése során alkalmazzuk az aktuális informatikai biztonsági ajánlásokat és szabványokat.
+
+4. Jelenlegi Üzleti Folyamatok Modellje:
+Jelenleg az ételrendelés telefonon vagy személyesen történik. Az éttermek manuálisan kezelik a rendeléseket és koordinálják a kiszállítást.
+
+5. Igényelt Üzleti Folyamatok Modellje:
+Az ügyfelek online rendelik meg az ételeket az egységes rendszeren keresztül. Az éttermek elektronikusan fogadják és kezelik a rendeléseket. A rendszer automatizálja a kiszállítási folyamatot, és biztosítja a felhasználóbarát interfészt mind az ügyfelek, mind az éttermek számára.
+
+6. Követelménylista:
+Felhasználói regisztráció és bejelentkezés
+Éttermek és étlapok kezelése
+Online ételrendelés és fizetés
+Kiszállítási idők és költségek kezelése
+Visszaigazolás és rendelési státuszok
+Felhasználói visszajelzések és értékelések
+Adatvédelem és biztonság
+Mobilbarát alkalmazás vagy weboldal
+7. Irányított és Szabad Szöveges Riportok Szövege:
+Az irányított riportok részletesen bemutatják a rendszer használatát, statisztikákat és felhasználói visszajelzéseket tartalmazva. A szabad szöveges riportok lehetőséget adnak az adatok szabadabb elemzésére és értelmezésére.
+
+8. Fogalomszótár:
+Ügyfél: Az ételrendelési platformot használó felhasználó.
+Étterem: Az ételeket kínáló üzlet vagy vállalkozás.
+Rendelés: Az ügyfél által kiválasztott és kifizetett ételek gyűjteménye.
+Kiszállítás: Az étel eljuttatása az étteremből az ügyfél részére.
+Értékelés: Az ügyfelek által adott pontszám vagy visszajelzés az éttermekről és a szolgáltatásról.
